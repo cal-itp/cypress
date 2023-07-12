@@ -14,7 +14,7 @@ from google.cloud import bigquery, exceptions
 
 UAC_DOWNLOAD_URL = 'https://www2.census.gov/geo/tiger/TIGER2020/UAC/tl_2020_us_uac20.zip'
 PROJECT_ID = os.environ['PROJECT_ID']
-DATASET_ID = os.environ['DATASET_ID']
+FEDERAL_DATASET_ID = os.environ['FEDERAL_DATASET_ID']
 
 
 def load_census_data():
@@ -44,7 +44,7 @@ def load_census_data():
         # Initialise the BigQuery dataset
         logging.info('Initializing the US federal data dataset in BigQuery...')
         client = bigquery.Client(project=PROJECT_ID)
-        dataset = bigquery.Dataset(f'{PROJECT_ID}.{DATASET_ID}')
+        dataset = bigquery.Dataset(f'{PROJECT_ID}.{FEDERAL_DATASET_ID}')
         dataset.location = 'us-west2'
 
         try:  # Create the dataset if it doesn't already exist
@@ -62,7 +62,7 @@ def load_census_data():
         )
         job = client.load_table_from_dataframe(
             gdf,
-            f'{PROJECT_ID}.{DATASET_ID}.census_urban_areas',
+            f'{PROJECT_ID}.{FEDERAL_DATASET_ID}.census_urban_areas',
             job_config=job_config,
         )
         job.result()

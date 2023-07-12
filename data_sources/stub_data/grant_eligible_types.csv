@@ -1,0 +1,39 @@
+grant_name,entity_type
+5310,transit agency
+5310,local government
+5310,mpo
+5310,private non-profit
+5311 Rural,transit agency
+5311 Rural,indian tribal government
+5311 Rural,local government
+5311 Rural,mpo
+5311 Rural,private non-profit
+5311 (f) Intercity,transit agency
+5311 (f) Intercity,local government
+5311 (f) Intercity,private non-profit
+5311 (f) Intercity,private for-profit
+5311 (f) Intercity,indian tribal government
+5399,transit agency
+5399,local government
+5399,mpo
+5399,private non-profit
+5311 CMAQ,transit agency
+5311 CMAQ,indian tribal government
+5311 CMAQ,local government
+5311 CMAQ,mpo
+5311 CMAQ,private non-profit
+SB 1 State of Good Repair,transit agency
+Active Transportation Program,mpo
+Active Transportation Program,school
+Trade Corridor Enhancement Program TCEP - Rail Freight,city
+Trade Corridor Enhancement Program TCEP - Rail Freight,county
+Trade Corridor Enhancement Program TCEP - Rail Freight,mpo
+Trade Corridor Enhancement Program TCEP - Rail Freight,port authority
+Trade Corridor Enhancement Program TCEP - Rail Freight,public construction authority
+Trade Corridor Enhancement Program TCEP - Rail Freight,private entity sponsored by a public agency
+HSIP,city
+HSIP,county
+Clean California Program,public agency
+Clean California Program,transit agency
+Clean California Program,indian tribal government
+Clean California Program,private non-profit

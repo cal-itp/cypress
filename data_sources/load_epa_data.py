@@ -15,7 +15,7 @@ from google.cloud import bigquery, exceptions
 
 NAA_DOWNLOAD_URL = 'https://www3.epa.gov/airquality/greenbook/shapefile/ozone_8hr_2015std_naa_shapefile.zip'
 PROJECT_ID = os.environ['PROJECT_ID']
-DATASET_ID = os.environ['DATASET_ID']
+FEDERAL_DATASET_ID = os.environ['FEDERAL_DATASET_ID']
 
 
 def geom_3d_to_2d(geom):
@@ -75,7 +75,7 @@ def load_epa_data():
         # Initialise the BigQuery dataset
         logging.info('Initializing the US federal data dataset in BigQuery...')
         client = bigquery.Client(project=PROJECT_ID)
-        dataset = bigquery.Dataset(f'{PROJECT_ID}.{DATASET_ID}')
+        dataset = bigquery.Dataset(f'{PROJECT_ID}.{FEDERAL_DATASET_ID}')
         dataset.location = 'us-west2'
 
         try:  # Create the dataset if it doesn't already exist
@@ -93,7 +93,7 @@ def load_epa_data():
         )
         job = client.load_table_from_dataframe(
             gdf,
-            f'{PROJECT_ID}.{DATASET_ID}.epa_non_attainment_areas',
+            f'{PROJECT_ID}.{FEDERAL_DATASET_ID}.epa_non_attainment_areas',
             job_config=job_config,
         )
         job.result()
