@@ -35,9 +35,9 @@ grant_eligibility_criteria as (
     from mjumbe_grants.grant_eligibility_criteria
 ),
 
-grant_eligible_types as (
+grant_eligible_grantee_types as (
     select *
-    from mjumbe_grants.grant_eligible_types
+    from mjumbe_grants.grant_eligible_grantee_types
 ),
 
 /*
@@ -72,54 +72,54 @@ customer_grant_eligibility_criteria as (
             when customers.organization_type = 'Non-Profit Organization'
             then 'private non-profit' in (
                 select entity_type
-                from grant_eligible_types
+                from grant_eligible_grantee_types
                 where grant_name = grants.name)
             when customers.organization_type = 'Company'
             then 'private for-profit' in (
                 select entity_type
-                from grant_eligible_types
+                from grant_eligible_grantee_types
                 where grant_name = grants.name)
             when customers.organization_type = 'Independent Agency'
                 or customers.organization_type = 'Joint Powers Agency'
             then 'transit agency' in (
                 select entity_type
-                from grant_eligible_types
+                from grant_eligible_grantee_types
                 where grant_name = grants.name)
             when customers.organization_type = 'County'
             then 'county' in (
                 select entity_type
-                from grant_eligible_types
+                from grant_eligible_grantee_types
                 where grant_name = grants.name)
             when customers.organization_type = 'Tribe'
             then 'indian tribal government' in (
                 select entity_type
-                from grant_eligible_types
+                from grant_eligible_grantee_types
                 where grant_name = grants.name)
             when customers.organization_type = 'City/Town'
             then 'city' in (
                 select entity_type
-                from grant_eligible_types
+                from grant_eligible_grantee_types
                 where grant_name = grants.name)
             when customers.organization_type = 'University - Public'
                 or customers.organization_type = 'University - Private'
                 or customers.organization_type = 'Community College'
             then 'school' in (
                 select entity_type
-                from grant_eligible_types
+                from grant_eligible_grantee_types
                 where grant_name = grants.name)
             when customers.organization_type = 'MPO/RTPA'
             then 'mpo' in (
                 select entity_type
-                from grant_eligible_types
+                from grant_eligible_grantee_types
                 where grant_name = grants.name)
                 or 'rtpa' in (
                 select entity_type
-                from grant_eligible_types
+                from grant_eligible_grantee_types
                 where grant_name = grants.name)
             when customers.organization_type = 'Council of Governments'
             then 'mpo' in (
                 select entity_type
-                from grant_eligible_types
+                from grant_eligible_grantee_types
                 where grant_name = grants.name)
             when customers.organization_type = 'Federal Government'
             then false
@@ -127,18 +127,18 @@ customer_grant_eligibility_criteria as (
         end as is_eligible,
         ('Customer org type is ' || customers.organization_type || ' and grant eligible types are ' || (
             select string_agg(entity_type, ', ')
-            from grant_eligible_types
+            from grant_eligible_grantee_types
             where grant_name = grants.name)) as reason
     from customers
     cross join grants
 
     union all
 
-    -- E0002: Non-urbanized Service Area
+    -- e0003: Non-urbanized Service Area
     select
         customers.name as customer_name,
         grants.name as grant_name,
-        'e0002' as eligibility_code,
+        'e0003' as eligibility_code,
         customers.has_service_to_non_urbanized_area as is_eligible,
         case when customers.has_service_to_non_urbanized_area
             then 'Customer has service to non-urbanized area'
@@ -148,15 +148,15 @@ customer_grant_eligibility_criteria as (
     cross join grants
     left join grant_eligibility_criteria
         on grant_eligibility_criteria.grant_name = grants.name
-    where grant_eligibility_criteria.eligibility_code = 'e0002'
+    where grant_eligibility_criteria.eligibility_code = 'e0003'
 
     union all
 
-    -- E0003: Regularly scheduled service connecting two or more urban areas
+    -- e0004: Regularly scheduled service connecting two or more urban areas
     select
         customers.name as customer_name,
         grants.name as grant_name,
-        'e0003' as eligibility_code,
+        'e0004' as eligibility_code,
         customers.has_service_connecting_urban_areas as is_eligible,
         case when customers.has_service_connecting_urban_areas
             then 'Customer has service connecting urban areas'
@@ -168,15 +168,15 @@ customer_grant_eligibility_criteria as (
     cross join grants
     left join grant_eligibility_criteria
         on grant_eligibility_criteria.grant_name = grants.name
-    where grant_eligibility_criteria.eligibility_code = 'e0003'
+    where grant_eligibility_criteria.eligibility_code = 'e0004'
 
     union all
 
-    -- E0004: Service area in an air quality non-attainment area
+    -- e0005: Service area in an air quality non-attainment area
     select
         customers.name as customer_name,
         grants.name as grant_name,
-        'e0004' as eligibility_code,
+        'e0005' as eligibility_code,
         customers.has_service_in_non_attainment_area as is_eligible,
         case when customers.has_service_in_non_attainment_area
             then 'Customer has service in air quality non-attainment area'
@@ -186,15 +186,15 @@ customer_grant_eligibility_criteria as (
     cross join grants
     left join grant_eligibility_criteria
         on grant_eligibility_criteria.grant_name = grants.name
-    where grant_eligibility_criteria.eligibility_code = 'e0004'
+    where grant_eligibility_criteria.eligibility_code = 'e0005'
 
     union all
 
-    -- E0005: Eligible for state transit assistance
+    -- e0006: Eligible for state transit assistance
     select
         customers.name as customer_name,
         grants.name as grant_name,
-        'e0005' as eligibility_code,
+        'e0006' as eligibility_code,
         customers.can_receive_state_transit_assistance as is_eligible,
         case when customers.can_receive_state_transit_assistance
             then 'Customer is eligible for state transit assistance'
@@ -204,11 +204,11 @@ customer_grant_eligibility_criteria as (
     cross join grants
     left join grant_eligibility_criteria
         on grant_eligibility_criteria.grant_name = grants.name
-    where grant_eligibility_criteria.eligibility_code = 'e0005'
+    where grant_eligibility_criteria.eligibility_code = 'e0006'
 
     union all
 
-    -- E0006: Service area is in Federally designated Trade Corridors of
+    -- e0007: Service area is in Federally designated Trade Corridors of
     --        National and Regional Significance on California's portion of the
     --        National Highway Freight Network as identified in the California
     --        Freight Mobility Plan and along other corridors with a high
@@ -216,7 +216,7 @@ customer_grant_eligibility_criteria as (
     select
         customers.name as customer_name,
         grants.name as grant_name,
-        'e0006' as eligibility_code,
+        'e0007' as eligibility_code,
         customers.has_service_along_freight_corridors as is_eligible,
         case when customers.has_service_along_freight_corridors
             then 'Customer has service along trade and/or freight corridors'
@@ -226,7 +226,7 @@ customer_grant_eligibility_criteria as (
     cross join grants
     left join grant_eligibility_criteria
         on grant_eligibility_criteria.grant_name = grants.name
-    where grant_eligibility_criteria.eligibility_code = 'e0006'
+    where grant_eligibility_criteria.eligibility_code = 'e0007'
 ),
 
 /*

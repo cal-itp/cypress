@@ -1,0 +1,911 @@
+key,name,organization_type,has_service_to_non_urbanized_area,has_service_connecting_urban_areas,has_service_in_non_attainment_area,can_receive_state_transit_assistance,has_service_along_freight_corridors
+eea7326fc87a575ce26e24cf56b8ff37,DAV,Non-Profit Organization,true,,false,true,false
+3769538de955e0b01204e955ef6929f9,IBI,Company,false,false,true,false,false
+8a644e497439d25c01619c8ec6c85c44,SAP,Company,false,,true,true,true
+fa22729bf0698cc6d2ac4f4a41e861b0,UTA,Company,false,false,true,false,false
+3fd4d81306c49cb718c37b48fcbe585c,Aina,Company,true,false,true,false,false
+dd84f99bda6dd9a68f1ee2daaa0107d2,DASH,Independent Agency,true,true,false,false,false
+825e38e861054960083797eccfabf976,Ford,Company,true,true,false,false,true
+3f5ec46caf318d18facde3706c7f72e7,HBSS,Company,false,true,true,false,true
+8f891be286b93b0014fa648ee8fa8ced,Kuba,Company,true,,false,true,false
+4b80ec730201f9a6beabd39696b4d2f3,ARINC,Company,false,,true,true,true
+d229e981624c9fd72efc541d38501784,Apple,Company,true,,false,true,true
+5ff73cfffe24d3f352bd2d804e74d1f0,Cubic,Company,false,,true,false,true
+b92c79502263e3a58890544114bb6341,Intel,Company,true,,true,true,false
+3e48ac6cdec3da7ccbd917cb7354df2c,Nixle,Company,true,,true,true,true
+e5952ae43ac8d0e86dc079814f070fb3,Zebra,Company,true,,true,true,false
+79af9588a021c2a2e08fb5589f4d0a4a,Elavon,Company,false,false,false,false,false
+9d44629ee6835023c4004dcc0d573a5e,Fiserv,Company,false,true,false,true,true
+6657bdae781b6ad59fc9103fe76a1bb7,Google,Company,false,true,false,false,true
+8ab70dfb0c3ca82426328c0179f5cb44,Hobnob,Company,false,true,true,false,false
+92a3483df3c633d7b5b514e7ad3088b1,Hytera,Company,false,false,false,false,false
+f3524ecacba01ce68783aeb77f2e10da,Masabi,Company,true,,true,true,true
+db9af35b3c294fc89c2a94ccb61f59aa,Moovel,Company,false,true,false,true,false
+4da874849e419197f8c43d2b6fff02fa,Moovit,Company,true,,true,false,false
+ecedaed11c8b9cb666953d8435a4c638,On Lok,Non-Profit Organization,true,,false,false,true
+680f6c4122f863f34953ac015d668a3d,PlanIt,Company,true,,false,true,true
+8a841b6450dad3bdbd0b3f22f6d13d8e,RideCo,Company,false,,true,true,true
+526ae648ae98bb5cf5c3e98133266b49,Sprint,Company,false,,false,true,true
+7812e47f0030c20a3d59a2a1deaf3025,Tufesa,Company,true,,true,false,true
+9cf3a156e2e3156e9b372996f9b38edd,VenTek,Company,true,true,true,true,false
+5e2064cb3c8b43b12be830703a31af9e,Wabtec,Company,true,true,false,true,false
+693977de8ef497ccc4d12c4367d6dc53,ADARide,Company,false,false,true,false,true
+ca543ba2ea251ca326b88fc7f60a6b29,Cittati,Company,true,,true,false,true
+eac0edd76256eb3f869e5d233a7fc512,Cityway,Company,false,,false,false,false
+34a36707eb848fe82b92f551429db802,Ecolane,Company,false,true,false,false,false
+decfe01f6631b325a0f818a10f59ad82,Eyeride,Company,false,,false,true,true
+22179107ecd39e2db9bfd3e1721d264d,FlixBus,Company,false,false,true,false,true
+208531b3ff4ed21e4d67ba3edce9e0ca,Genfare,Company,true,false,true,false,false
+df259bea8b5c1861184802c84305e21b,Hopthru,Company,true,,true,true,true
+eac014283df3fcd812d347fea800e3e9,INIT SE,Company,true,,true,false,false
+9bd57ec5df48e00dd382d596632553db,Kimochi,Non-Profit Organization,false,true,false,true,true
+ce089b2afeef25d84008bca7d49494d7,Megabus,Company,false,,true,false,false
+f96f49c851c7a5cd25f42dc5967ad040,Optibus,Company,true,,true,true,false
+d2bcf19634c36d0cb1b4ad1444aff6d0,PROP SF,Company,false,false,false,false,true
+727fd4a061ade3eddc5bf8eb3cee018b,Ride On,Non-Profit Organization,true,,true,false,true
+599c67782d6f8186d5f3bfcb103c1ece,Roadify,Company,true,,true,true,false
+daa81e0cf0b8f2096aafb966cbeb4c44,Samsara,Company,false,,true,false,true
+70f9d1a15ec3a9c847a48127a8422f60,Verizon,Company,true,,true,true,false
+b740efd508952645b48c2b882555f726,Avenidas,Non-Profit Organization,true,false,false,true,false
+74289bfb36c4b36f438923efcf723cef,BlinkTag,Company,true,,true,true,true
+9a4d353b49c6600501157010b851b4f7,Conveyal,Company,false,true,true,false,false
+cdd7c878d4b04649cd553be51f3ff84b,Empressa,Company,false,true,false,true,true
+be999fdaa2aed568b296a69b81eb4b3e,GMV S.A.,Company,false,true,false,true,true
+26a0f38479ccb572d2a3ff0374edfc1c,Granicus,Company,true,,true,false,true
+6063baa6c7727ee0f95aaa0b2a79b991,HaCon AG,Company,false,true,false,true,true
+9d046983bb946953cd6f34ad706a27b2,L3Harris,Company,false,,true,false,true
+1bae82ca9957422d363c493d30adb3b7,Malmator,Company,false,true,false,true,false
+74a613281c8e0a763d6d750d8680dae5,Mecatran,Company,false,true,true,false,false
+5fcb468b580f58fe8381530f23f45d93,Mobileye,Company,true,,true,true,false
+8547e02c1cae42deb8e4fef0946c7e61,OUTREACH,Non-Profit Organization,false,false,true,false,false
+869a68d8e392dce01bd3a228e921b2cb,ParaPlan,Company,false,,true,false,true
+4fb08d46de40d7692f6075b16f8b386b,Peak PTT,Company,true,false,true,true,true
+2a1460e9ca87e255bc42ea698530050c,Tideline,Company,true,true,false,true,true
+3c6eff512d8066edef7e7261f0e883a7,TouchNet,Company,true,,false,true,true
+243c6ae6ea979ad22c8a689442b2d72e,TransDev,Company,true,,false,true,true
+35f907ddf15b8e3bf1d20f03f262275c,TransLoc,Company,false,true,true,false,false
+3c15881eaadf368118152940148c698f,Via Inc.,Company,true,true,true,false,false
+8ad128c47daf7b5c2b1f9048a8b95568,Worldpay,Company,true,false,false,true,false
+c70d40b784155d83ba6ef7f6f2481f94,Able Inc.,Non-Profit Organization,true,,true,false,false
+8370a5152ace9dd8d672c0f5586a9d0f,Genentech,Company,false,,true,true,true
+c7b838888eaf1229d4791a1ba1c69120,Giro Inc.,Company,false,true,true,true,false
+ccff5ca9374c1b423e01fe6b2d71fcc3,Greyhound,Company,true,true,false,false,true
+1de12cabbd3ce14fd768549adeaefd65,IT Curves,Company,true,true,true,false,true
+de206adf50ee4cf96e3e14369e05419d,Interline,Company,true,,false,true,false
+ebc1abcea3779be5270794f126868057,Iris Inc.,Company,true,,false,false,true
+671b9ef01595fd446c0b9dbc07450ca0,Ito World,Company,true,false,true,true,false
+be263c4bea35a307d45c4826bc39479f,Littlepay,Company,true,,true,false,false
+c15c6aaa2354a3bca9952578709c6b7a,Lyft Inc.,Company,false,,false,false,true
+a5c4861565c4bc0d6154f70c861819ef,"MIG, Inc.",Company,true,true,false,true,true
+ad768a6eb725b1c404e367121b15663d,Microsoft,Company,true,,false,true,true
+e34efcd1629d310a01e41ccc67e4d044,NuovoTeam,Company,false,,true,false,true
+3b04d1155701d2cd97f5998032357a34,Pantonium,Company,false,false,true,false,true
+e3fff8ae30d4dd72b8842ad9c7230f2c,RydeTrans,Company,true,true,true,true,false
+e44a039503338c3185ed9e5679500f89,TripSpark,Company,false,,true,false,false
+a4aa6595afe1dba0b233f61e01b57965,Uber Inc.,Company,true,,true,true,false
+540fb3a1274ce5e12b6a62141291dd61,Bombardier,Company,true,true,true,true,false
+96416b5b5f532615cea9f24c5bcd3cce,Chase Inc.,Company,false,false,false,false,false
+73fe559c90a0dc231ab6ff682ddd332d,Desert ARC,Non-Profit Organization,true,false,true,true,false
+a385b13fc14782f8fd54777308e3c93b,Dilax Inc.,Company,true,,false,false,true
+eaf6419862b4edb7424af58e1add8714,Everbridge,Company,false,false,true,true,true
+f487c6dad9c2087acee9a54cfa0ac2b9,Icomera AG,Company,true,,true,false,false
+4432add19904f330241f3a17745cc23b,Logistrics,Company,false,true,false,false,false
+705a7834a58c57be07e5abdeff576cd3,Modaxo Inc,Company,true,,false,false,false
+bbf9946cb2f590a2c3ec67bf4113dfef,RouteMatch,Company,true,,true,true,true
+2e677e7cb46f8b8a2b21e2456998187c,Safe Fleet,Company,false,,true,false,true
+833d2c32438c3d6b3fb13f1f2950ef5e,Siemens AG,Company,true,true,true,true,false
+0bb188e932825d2482c674d88d6275ec,Spare Labs,Company,true,true,true,false,true
+b94aaddbffeb880c275f1486322e2ddc,Spirit Bus,Independent Agency,false,false,true,true,true
+accdda02fc491efb0aa0f4afb15e80a2,Zonar Inc.,Company,false,true,false,true,true
+e1e8708cf815056e747965b2ec74d061,ABC Shuttle,Company,false,,true,false,true
+f435e45c3b26cecdcc2cff341107ca01,ACE Parking,Company,false,,true,false,false
+4a9655075e21eafbba9688d28d4f4ab3,CHK America,Company,false,,false,false,false
+814ddca69d84db43d1bb4a761cdb757e,Checker Cab,Company,false,,false,false,false
+33cda20019c946bbe358bf95fe2fa0e4,DemandTrans,Company,false,,false,false,false
+9508bd18fb663ef07f3d9e064b2a1488,El Concilio,Non-Profit Organization,true,,false,false,false
+765e8b0ea1de57fa06082d354de0a385,Fiesta Taxi,Company,false,,true,false,true
+9f64166a594e9783d3516cdf6d5d5a40,IPS Systems,Company,false,true,false,true,true
+628b41a9909a2447e366b96c0982139e,Intelliride,Company,false,,true,false,false
+a056b0e0242367463bd9d02f8ea4fd0b,Inyo County,County,true,,false,false,true
+d44688ee9e365a0ecd094c8b10560829,Karuk Tribe,Tribe,false,,true,false,true
+26beef97e37f23f9d3b635316b5418ab,Mono County,County,false,,false,false,false
+690ff5dd2bffe8484151c09a9381fb20,Oracle Inc.,Company,true,true,true,true,false
+1f1e47e8d3d7039a2d875fce1b04dfa3,Pace Solano,Non-Profit Organization,false,,true,true,true
+044030a63e44202bfd0edbc2a8d44ee1,Playa Vista,Company,false,,false,false,true
+12db1c56edb2f268ef77b98a9a1609f3,PocAnyWhere,Company,true,,true,false,false
+74f123f6ef126d2e006a1e771dfa7d8c,PositionPTT,Company,true,,false,true,false
+9c7d924f38b5e3b11adf4b557dbe197f,Square Inc.,Company,false,,true,false,false
+5122096df928969e6aae55aaadf052ed,SunriseSESA,Company,true,,true,false,false
+1d2bd671ec16322e64c27f8c827c86d5,TASSTA GmbH,Company,false,true,true,false,true
+c41437bf34c1fecebe0bf3e44236f878,TeamConnect,Company,false,,false,true,false
+52828a999bcb23d7c0653f2c9d68c84d,Transfinder,Company,false,true,true,false,true
+9f5f990b25241d3406a62556713cf198,TransitExec,Company,true,true,false,true,false
+ddcbe5222248794a1703141c0db94c66,VistAbility,Non-Profit Organization,true,true,false,true,true
+903b9b47a90c0f16015fbde88a4cd4b7,WaySine LLC,Company,false,,false,false,true
+bc3ceadf7b3df94e0584dd904817eb70,Wells Fargo,Company,true,,true,false,true
+e74f54a778d9d3ed5e37dab724e56263,Yurok Tribe,Tribe,false,false,true,false,false
+30b8653a56ffe0253e1ede4b005028ef,Abrazar Inc.,Non-Profit Organization,false,false,true,false,false
+fba23d9d2cadefe52d012e4192868742,Actionfigure,Company,true,true,false,true,false
+4d6e7597fa5c5c5c15214ea5f0b6a7ff,Ampla Health,Non-Profit Organization,true,,false,true,false
+9e45df9a50c2521756ff32a345381ba4,Butte County,County,true,true,false,true,false
+ec707f24be1390e342f08e1c4fe8b0b3,CDX Wireless,Company,false,true,false,false,false
+fb32b8973ddeeba382636b8744e55432,CTS Software,Company,true,true,true,true,true
+2cdf520f9fe30168cef30ac57da3264d,City of Brea,City/Town,true,,true,true,true
+a68559f4e582cf0a5295d7092edf4c1d,City of Ione,City/Town,true,true,true,true,true
+879a4c7fbd176a63506e78a0e415b282,Conduent Inc,Company,true,true,false,false,false
+61271fd0b3e5d3d45508052c539236db,Connectpoint,Company,false,,false,true,true
+b02b84a3642b33eedb22224c23391a2b,Goal Systems,Company,true,true,true,true,true
+71798429bd651e61140a7e4b5f77d2ed,Intersection,Company,true,,true,true,true
+9f064eb76ef2a1c076e0f29f7f4ec2f4,MobilityData,Company,true,false,false,true,true
+802a5ae3af10b806427d1fe23ba326ec,Port Hueneme,City/Town,true,true,true,false,true
+14cb4c1dade3ea2fe4f65b9b09b20c54,Sally's Fund,Non-Profit Organization,true,false,false,true,true
+c8e0208faef4b949c193fcb9b2f46199,Shopify Inc.,Company,false,false,false,false,false
+27a3dc150e1bbab2ee1c57d774457723,Swiftly Inc.,Company,false,,true,true,false
+16520da7d63613580d4e71902ae458ca,Upland Manor,Non-Profit Organization,true,true,false,true,false
+d2c77b1f4648e1ff5f7e972761e91ba3,Vivalon Inc.,Non-Profit Organization,true,,false,false,false
+63683cd931842b03f96c39c526966632,Walmart Inc.,Company,false,true,false,true,true
+5645aa499eac7139f93d04ca0b40ddf8,AEP Ticketing,Company,true,true,false,true,true
+169c9ee75b5bc4f365c86298970206ea,AT&T Business,Company,false,true,false,false,true
+4aec05431bdca19ec8b59d46f2659336,Alpine County,County,false,false,true,false,false
+2e97486128f1787e9148a0106d271a11,Amador County,County,true,,false,true,true
+632855a0ce1f9ce19c26752bfab2e9dc,Ambiance Inc.,Company,true,,true,true,false
+3834d2553d7a5acc8a4bb1ce85de0525,AmericanEagle,Company,true,false,true,false,false
+d52426bfe481cebc64cb692c4dd0189b,Bell Cab Inc.,Company,true,,true,false,true
+1536f5406bb4ac1885732d3274ddef9b,Binary System,Company,false,,true,false,false
+d6578c5bfc261c18e52919aefdc20f33,Bytemark Inc.,Company,true,,false,false,true
+abaa66172289e192d111f270855606a4,Centum Adetel,Company,false,,true,false,false
+52cdd226f336469f567b53742e460e96,City Cab Inc.,Company,true,,true,true,true
+219909a89383cef519911a8e6399a8a1,City of Azusa,City/Town,false,,false,false,false
+82cd4b368ab19b79795998dc2cd527ea,City of Biggs,City/Town,false,,true,false,true
+98cca189da20db1bfa3d4ed228be0845,City of Ceres,City/Town,true,,true,true,false
+0f994a321c3769c1a99835cea64d423a,City of Chico,City/Town,true,,true,true,true
+f725e5986e06cf555a233d862b0e9e1d,City of Colma,City/Town,true,true,true,true,false
+804ded137cfa7dc9b11d4d41a994bca6,City of Davis,City/Town,false,,true,false,false
+bbc6d2bc359d55141b3153093f562503,City of Dixon,City/Town,false,true,false,false,true
+35d033a9269cfaf38c14e41d99a16991,City of Huron,City/Town,true,,true,true,false
+e53aef089a04e27aaed790120109e2db,City of Poway,City/Town,false,,true,false,false
+15546f463b01e6ed7ce16dd74885dbc0,City of Selma,City/Town,false,,false,true,false
+69aa687cc49eee485caa2de66aa80e02,City of Vista,City/Town,false,true,true,false,true
+0d249e9edb3ba600e9508bc215972c08,City of Wasco,City/Town,false,,true,true,false
+60fcf1542c319b1d2a092ba59b0b29ec,El Paseo Limo,Company,true,true,true,false,true
+535a58205b966b1fd1e25bcf1ca4c7e1,First Transit,Company,true,true,false,true,false
+b2dadd3fc73755c4be8903eedaa27ed8,Fresno County,County,true,,false,false,false
+4232d9582232d7bb72c4295b89333295,Orange County,County,true,true,false,false,true
+50a014b4734b174d6255653fb5a47342,Plumas County,County,true,true,true,false,true
+027ab62cb2bb8379182c4dbd5412e27b,SDTJ Passport,Company,true,false,true,true,false
+2a44332e374913574b722d8ebc12e143,SYSTEMTECHNIK,Company,false,,false,true,true
+b5a0ab7d2781099a234185a9596c74ea,Seniors First,Non-Profit Organization,false,false,false,false,true
+a7be8f4f4d46dfb82e519b5e60850866,Shasta County,County,false,,false,false,false
+6e7b50850a4e5a649ab18b3b67859bb9,SteppingStone,Non-Profit Organization,false,true,false,false,true
+6a2411783532c86ddc69b17386e7491d,Sutter Health,Non-Profit Organization,false,,false,false,true
+78b8826d09db63957232831b635ecc51,Token Transit,Company,false,false,true,false,false
+1579292ae846667782b485b5d0acf7ee,Trapeze Group,Company,false,true,false,true,true
+8936e538f6ad8d3f6247a02673a620ef,Trillium Inc.,Company,false,true,true,false,true
+a291a6f64c365c0c037b748efac30145,TripShot Inc.,Company,false,false,true,true,true
+2f771ec8d659e8ecebdec083ce70d646,Tulare County,County,true,,true,true,false
+c0e80add7fccc8d16b0fee2d11052a51,Vintage House,Non-Profit Organization,true,,true,false,true
+9db83bf7306791bf112567dc1b9938c3,Volaris Group,Company,true,,false,true,true
+7fabccd15cfcabc512a0b4ec08a56991,Yellow Cab CA,Company,true,,true,false,true
+768d63d2e78ca2180fa1722f7e8a7b30,A-Para Transit,Company,false,true,false,true,true
+abecb9ee50dc9e5d6651d3b47670f90a,Active Network,Company,false,true,false,true,true
+45ba34c7bb86d9c4ada65ef05ac04fb8,Catalina Flyer,Company,true,,true,false,true
+1cd7942b009046cd09066abbffa29532,City of Bishop,City/Town,false,,false,false,true
+17376b3a571ed265453a7bd2c18e32b9,City of Carson,City/Town,false,false,false,false,true
+78d870ab9c4e89b26d935196847f5ad5,City of Covina,City/Town,true,,true,true,false
+6d14c68b4f5e81071caae48d2af10ee0,City of Cuyama,City/Town,true,true,false,true,true
+a6c1e29c6012dc4fe11532c8988801d0,City of Dinuba,City/Town,false,false,true,false,false
+cf16645d5065ce10487743d6abce113e,City of Exeter,City/Town,true,true,true,true,false
+3b0cecf9b7b02e372d8a51e4db571eb6,City of Folsom,City/Town,true,,true,true,true
+9d1bdf538864f34cb7f78425385f13f9,City of Fowler,City/Town,false,true,true,false,false
+5f3ae5fea245c793b934fba1be9c1a3d,City of Goleta,City/Town,false,true,false,false,false
+49de72dd2d52084fabcfa5f2253b2f31,City of Irvine,City/Town,false,,true,true,false
+f3821082f9d0f84db59ac2a4cfb123df,City of Kerman,City/Town,false,,true,false,false
+1edf443b72ec38cfa539bd6d56a5b224,City of Malibu,City/Town,false,true,true,false,false
+f52d8ff4e749e5f6eab08e61c18140bb,City of Marina,City/Town,false,,true,true,false
+b5537ffe2261b245184109bfe0eb1adc,City of Newman,City/Town,false,,false,true,false
+0d60f8ea85003ff75e569beb85a4af98,City of Orcutt,City/Town,false,true,true,true,true
+20340366b7b6eb2fabc86378bd79a567,City of Orland,City/Town,true,true,false,false,false
+f57178d37d72a5d4dbf4a7daf2229c14,City of Oxnard,City/Town,false,true,true,false,true
+5f16a4a97d3f47dfe74c585584eac0fd,City of Sanger,City/Town,true,false,false,false,true
+31cc390faaf87526fba35ed04493cccc,City of Santee,City/Town,true,false,true,false,true
+4fe1cfd21e3b8b387472c99655db78af,City of Tulare,City/Town,true,,true,true,false
+e733671fd888c64c26580ea9ecb7a264,City of Tustin,City/Town,false,true,true,true,true
+0c57647674a3bfa205585ab025ab1927,City of Walnut,City/Town,true,,true,false,true
+44fb153a36e786d31b5c1a0e1a97710f,Coach USA Inc.,Company,true,,false,true,false
+922acabb7c942adee02b365feca653f6,Covina Transit,City/Town,false,true,false,true,true
+05f1d20c3a42b8938f6663ab7aa0e456,Dignity Health,Non-Profit Organization,false,,false,false,true
+0e58492b381fcb22e5a60e8d18029128,DoubleMap Inc.,Company,false,true,false,false,true
+e2534eadad437980f1d4a7d57fdc7813,Family Bridges,Non-Profit Organization,false,true,true,false,false
+446e54505ce35685572b79af6255f316,LIFE ElderCare,Non-Profit Organization,true,true,false,true,true
+65b42a3a0b9101b3de4e9000622daa70,MV Paratransit,Company,false,,true,false,true
+a784d65ba630a8da0abfe02ca320fea5,Mobile Tornado,Company,true,true,false,false,true
+cb70801fcde02da83b50e73b9bdcab4c,Padam Mobility,Company,false,true,true,true,true
+4d66bee10854cee5940d2e62aebf657a,Presidio Trust,Federal Government,false,,true,false,false
+ec398660b34c2ff7c218c6cce4d4e3b8,Seton Hospital,Company,true,true,false,true,false
+eba8cdd0fff988f57571544b60772162,Shores of Hope,Non-Profit Organization,false,,false,false,true
+07d939326d8793b8f3c3a0b9abd2db81,Signature Rail,Company,false,,false,false,true
+81dd8d7cf8ae4122bb55b282e4ef7ddc,Ventura County,County,true,false,true,true,true
+929456f9d7c6f73c00df463384333f8c,iSi Technology,Company,false,true,true,false,true
+d218c8fd00eff4a00d83462077685973,Access Services,Independent Agency,true,false,true,true,true
+288da168eb356e4345edc8ca59505649,All Yellow Taxi,Company,true,false,true,false,true
+03fe810a26746c375442451db607e294,Angel View Inc.,Non-Profit Organization,false,true,true,false,false
+bcf737e70e77c514976d5f63a2cc1328,Bakersfield ARC,Non-Profit Organization,true,true,false,false,true
+7c7633f5866649cafc9ef76fa0a77189,City of Alameda,City/Town,false,true,true,false,true
+476e4cac3a83f670e30a951ff377f283,City of Anaheim,City/Town,false,false,true,true,false
+f47648d06c71947015930e1996814465,City of Belmont,City/Town,false,true,false,false,true
+9439557c422219a263c029596584c5d1,City of Cypress,City/Town,true,,true,false,true
+d63502fcad9ce8291281c0008a112607,City of Del Mar,City/Town,false,true,true,true,true
+594c45bb0f3bc4ef49ec7e1da2a9472a,City of Fontana,City/Town,false,true,true,false,false
+68103f320b295497a44a76f833e6a4b5,City of Fortuna,City/Town,true,,true,false,false
+70b7cdb87a00300c483d058a5d45e2a4,City of Fremont,City/Town,false,false,true,false,false
+d882581468072a9b25e91ed59e4d4843,City of Gridley,City/Town,false,,false,false,true
+707333ae3b17f96dcf1e48923e8a9a9a,City of Hughson,City/Town,false,true,true,true,true
+111caa584d15b2826cb89716a22b48ba,City of Jackson,City/Town,false,,false,true,true
+9e2d534b6892d286466a5f1fd7ebfcfa,City of La Mesa,City/Town,false,,true,true,true
+c40b96f0159cd9af23adb35bb7794379,City of Lathrop,City/Town,false,,false,false,true
+128ace5b41c1ceb14e95931d302b16f1,City of Lincoln,City/Town,true,,true,true,true
+59e104a7dd81b97d41e9edd42a625537,City of Lindsay,City/Town,true,true,true,false,true
+e1a19c65eaff5994c179df909087b92f,City of Mendota,City/Town,false,true,false,true,true
+93c098a204fa604125cb0d0856aa783a,City of Modesto,City/Town,false,true,false,true,true
+59ba8672317afb2a0d054c6e537f56ca,City of Oakdale,City/Town,false,true,false,true,false
+8fcb46323cd6fab66e275c79647c8c77,City of Parlier,City/Town,true,true,false,true,true
+6cec4610303196d70751357c2becd681,City of Reedley,City/Town,false,true,true,true,false
+4963ebbd003c3b219106bff78772587f,City of Salinas,City/Town,true,true,true,false,true
+2c0c619a4efca846e41ecdf34cf46345,City of Seaside,City/Town,true,,true,false,false
+eb81f2c3986a8df69d0c60657d6d5816,City of Soledad,City/Town,true,false,true,true,true
+cef2195615267d6647fd6f314d612b95,City of Willows,City/Town,false,false,false,true,true
+0f5587425bbc30cbd6ad64ede688259c,Coastal Seniors,Non-Profit Organization,true,true,false,false,false
+cdc687838e0d0863219cccdfcc2f5c76,Connexionz Inc.,Company,false,,false,false,true
+23dd8c020123cc39fc36e91a2cb550d6,Corinthian Inc.,Company,false,true,false,false,false
+07d7b38820df08108adfb66d4ae7ab5c,Friends Outside,Non-Profit Organization,false,false,false,false,false
+ef569458e4a56bed0613b5f74f711e6e,Imperial County,County,true,true,false,true,false
+f87bf5fa89b5e994856a6e7bc0821f53,MJM Innovations,Company,false,false,true,false,false
+bb44461ecb2a28cae331ed5058fb60cf,MOVE Stanislaus,Non-Profit Organization,false,true,true,true,false
+2f7241021cada2290fb868ace1bb0e00,Marin Airporter,Company,false,true,false,false,true
+77d834732ad9acf4acefc53b0f9c81b1,Mariposa County,County,false,false,true,false,true
+e4d0041ed4cbbd8231edb9bf8cad406d,Monterey County,County,true,,true,false,true
+e5d4d8741b3831dd7d50f0bc4cb5a3ca,My Ride To Work,Company,true,false,true,false,true
+87cb5c55138fe8a34abfdb357d19208b,Orange Cab Inc.,Company,true,,true,false,false
+103e999129e481e084d695a9178093be,People Services,Non-Profit Organization,true,true,false,false,false
+19fff26c92e7ba6f18424d9ca42b302a,"Ride-Right, LLC",Company,true,false,false,false,false
+9c79e4ee6e1904e1c79320cc091b764b,SLA Corporation,Company,false,,true,true,false
+1361d6fceb6a94c54058f6f911df47ad,Sal's Taxi Inc.,Company,false,,false,false,true
+69723e02662ba85b045c6dee7b4b5a39,Silver Ride LLC,Company,true,true,false,false,true
+b11f5d5173bb8e610d1f20f86e4250df,The Respite Inn,Non-Profit Organization,false,true,false,true,false
+ddcf50b5a9f4eadeb93e06d6646ef680,Town of Truckee,City/Town,false,true,false,true,false
+19619bab083988ecc877c0fdcaafe347,UC Davis Health,University - Public,true,true,false,false,false
+283f31ce3ba49ec0e8b739828aa47fad,Calaveras County,County,false,true,false,true,false
+af0337bdfc619121b6a5b9547a0ba16a,Catalina Express,Company,true,,true,true,false
+c55c77de44a6a5dd00d16bb77e18046e,City of Atherton,City/Town,false,,false,true,false
+baf9386138e48572052ffaba324c8b3f,City of Berkeley,City/Town,false,false,false,true,false
+a507d14e45af401219b32c088430beb3,City of Brisbane,City/Town,false,true,true,false,true
+23f08739b46ab1ef9ea8ecadc0c8d129,City of Buellton,City/Town,false,,true,true,true
+6122f67e41394ca2adb3b37e3bfadd19,City of Capitola,City/Town,true,true,true,true,true
+77870a3fead3648b0a627b0e32d0825e,City of Carlsbad,City/Town,false,true,true,true,true
+a30db7850e67071dae973791522ecb94,City of Coalinga,City/Town,false,,true,true,true
+f4be0319f65b15d29221814d6e4609d2,City of Corcoran,City/Town,false,,true,true,true
+e14cd66af01185a3fa188fedc9aa6b18,City of Coronado,City/Town,true,,false,false,false
+ab9d9c7f9fccc4983b5ac5768af528c7,City of El Cajon,City/Town,false,,true,true,false
+da2222b281d522506c806ce3f4fddae4,City of Fillmore,City/Town,true,,false,true,true
+35fb1f321ad3b0dfbe2defe80585516a,City of Gonzales,City/Town,true,true,false,true,false
+b679b6d6680ba634cda8772d729228fa,City of La Habra,City/Town,false,false,true,false,false
+6ab2bcde7448426a083c8574b6815ccc,City of Lakewood,City/Town,false,false,true,false,false
+7210e43e0d1d0e794255d0d65ba4716e,City of Maricopa,City/Town,true,false,false,false,true
+8ed4ba492963a5e6530a27382ab1a166,City of Millbrae,City/Town,true,,true,true,false
+461a66672e3b56182f55c40a66980136,City of Milpitas,City/Town,true,,false,false,true
+b727a1883cac7fa91b1abcb3ad89c9e1,City of Monrovia,City/Town,true,,true,false,false
+daf329f528ba0e9b75b491881dbc743c,City of Monterey,City/Town,true,,false,false,true
+eb3a5037bfb732ec4805f28d8b4a0e7a,City of Oroville,City/Town,true,,true,false,true
+157ee66d48384fb4f96e6e381d93406c,City of Pacifica,City/Town,false,false,false,true,true
+3f4ae050f89073ed3ded03b6f127fc8e,City of Plymouth,City/Town,true,,true,false,false
+25b39ff31f8fd735f20a9a3b9a2c8f1a,City of Stockton,City/Town,true,true,true,true,false
+3ee9f2d3f53fd8960e058217f114f42b,City of Whittier,City/Town,true,true,false,false,true
+c94a1ed27fc423498cfb9e11143e643c,City of Woodlake,City/Town,true,true,true,true,true
+025272ae5f76e4cfab80eee4366bd2aa,City of Woodside,City/Town,false,false,false,false,false
+cff1d74a2147bfa586c0a90ca5e7eacc,ETA Transit Inc.,Company,true,true,true,false,false
+6c48d022b99fd9195af7cd6d5f668f61,El Corre Caminos,Company,true,true,true,true,true
+37bd4a33b0a01133143cd9530040dc60,Gray-Bowen-Scott,Company,true,,false,false,false
+d6ca0cc7e0a9f4415b879ae9531a677e,Independent Taxi,Company,true,,false,false,false
+3cbd07d9a6961051d98483d5d67f7742,Mobility Matters,Non-Profit Organization,false,true,true,false,false
+873f4145734bd1da34181a1abea2190e,Northrop Grumman,Company,false,,true,false,true
+32033186d9819e43c107c7a6cb5aaa9f,Paratransit Inc.,Company,false,,false,true,true
+b9b8cec242c40e7f7b692e00259c6bf9,Peppermint Ridge,Non-Profit Organization,true,,false,true,true
+b8ece1695b67f710f817fa25ad165675,Riverside County,County,true,true,true,false,false
+74ea9fb4cc0c2f454a2f7f568d3e850a,S&A Systems Inc.,Company,false,,true,false,false
+8ef13999c991b6cb197913b0b2e54910,San Diego County,County,true,true,false,true,true
+640ee8dfaa5596c23640ba898556f39d,San Mateo County,County,true,,true,true,false
+f9ab6f57b94937a6666aadacf29d1818,Town of Paradise,City/Town,false,,true,false,true
+335897d6d0f2d80bc0cafd6bdb11ec15,Transit App Inc.,Company,false,,true,true,true
+9af451016999bf1425f3c9dbe7da7e48,Tule River Tribe,Tribe,true,false,true,true,true
+4da60e238d8d76da2bbc9c74dfcd0a58,Beverly Hills Cab,Company,false,,true,true,true
+45bfc6099611eae01e28c191f7f08063,City of Claremont,City/Town,true,false,false,true,false
+62a176d57354e9bdd8abbc294f6a497e,City of Daly City,City/Town,true,false,false,false,true
+60debd940b95c1ccc7121061dcab3250,City of Encinitas,City/Town,true,,false,false,true
+9e03ce02b950593ea91b3a14e568e09b,City of Escondido,City/Town,true,,true,true,true
+3df5e95cce6f4315dd96510b1ce99ad2,City of Firebaugh,City/Town,true,false,true,false,true
+dc8d936fe2a91f904ffe8cf7dd8b51bd,City of Fullerton,City/Town,true,false,false,true,false
+f3dea1b508e56ee099602255b43cedfb,City of Hawthorne,City/Town,true,,false,false,true
+b95ab2cfe853a8f236205f9cc614fcd7,City of Hollister,City/Town,false,true,true,true,false
+b6d547dd889f15a18552bc1a1693819e,City of King City,City/Town,true,,true,false,false
+d56954db0f7742352b936f4a90fa0e06,City of Kingsburg,City/Town,false,false,true,true,true
+6169bfadb100e73f32aebff9a10f8a57,City of La Mirada,City/Town,true,,true,false,true
+a9041dd7127cb16ed5638eb1fde0c093,City of Lafayette,City/Town,false,,true,false,false
+7eca867e7b2eeadfa437a7bf81bc0fbc,City of McFarland,City/Town,true,true,true,false,true
+78cb50a4145c1ce5142f3fdff9afedaa,City of Oceanside,City/Town,false,,true,true,false
+681732730cdcac6caa9b33ab937d3349,City of Palo Alto,City/Town,true,true,true,true,true
+76e2bee05b6de8de022b4cfca65348a2,City of Patterson,City/Town,false,,true,false,false
+f41654ea78736de9b615a71ad748144d,City of Placentia,City/Town,false,,true,false,true
+10cdf0aa55afd6977ddfe622473a05a5,City of Riverbank,City/Town,true,,true,false,true
+9d90ca31465376027a4f1390bbd5790d,City of Riverside,City/Town,false,,false,true,false
+155ae32b8eb2738583fb07e41c4eec45,City of San Bruno,City/Town,false,false,true,false,false
+4a3f85a76cb42975a3a75937a5181a5d,City of San Diego,City/Town,true,,true,true,false
+1e687fb73744498fdc5b1a1e3fbf9a2e,City of San Mateo,City/Town,false,,false,true,false
+9b258101ffc1e13c4848e63d012615bb,City of Sand City,City/Town,false,true,false,false,true
+e0e8f3913df6a4a9e7ed29dc1770e306,City of Santa Ana,City/Town,true,false,true,true,false
+b83814cdf8f8c6fb94d4a052dd5a451b,City of Tehachapi,City/Town,false,,false,true,false
+5b71acfd159a198d31d016a6a571e644,City of Waterford,City/Town,true,,false,true,false
+e97612e71bbd0fed72e55c0713e99037,DataGraffikk A.G.,Company,true,false,true,true,true
+ef4c4cea3fa6ef0d3ffab7e6cbdca90b,Help of Ojai Inc.,Non-Profit Organization,true,true,true,true,false
+504ef841ce5f88f05aeb0ff920171d29,Kaiser Permanente,Company,false,,true,true,true
+34f06a18cb35b78d104c13bd28cdf381,Limousine Express,Company,true,,true,false,false
+85804ec7354fd979046eeb6ae50063ec,MV Transportation,Company,true,,true,false,false
+57002a0e17dd9ab40f3ca293e74a2d8d,San Benito County,County,true,,true,false,true
+f49a230fb9170533e054c2407de0364a,Santa Cruz County,County,false,,false,true,true
+32c0b98c5c103655687d4629a2d89e3a,Sierra Management,Company,true,false,false,true,true
+2de4a0e0b293e86b27ae0ac8f7223c59,Stanislaus County,County,true,false,true,true,false
+cace287ea897bd5092bc6d7840ba82fc,Wini Technologies,Company,true,,false,false,true
+1b75c055ae0c349c09a40cbd152ce9cc,Ceres Area Transit,Independent Agency,false,true,false,true,false
+eac54c0caab809e730227c42e4011725,City of Atascadero,City/Town,true,,true,false,false
+b022f6930cc4f3e3c65e9dae779843a4,City of Buena Park,City/Town,true,,true,false,false
+b976f060e27bb8b3ed2c4d035118a664,City of Burlingame,City/Town,false,,false,false,false
+487f024b8469486bd653aa5bf6dc86e3,City of Chowchilla,City/Town,true,true,false,true,true
+e4c75520188d419eb4f964ba72c99eb8,City of Dana Point,City/Town,true,true,true,false,false
+7fa75ca97b64940dc0b22151e8de41e8,City of Greenfield,City/Town,true,false,false,true,true
+114e3ebd6bbed5c5abf17cd63b11f375,City of Menlo Park,City/Town,false,true,true,false,true
+677dede8f6ad399ee27e03f7854de4e1,City of Pleasanton,City/Town,false,true,false,true,true
+b55dd766fa6a1b5ef66584d34f08065e,City of Ridgecrest,City/Town,true,true,false,false,false
+0918f97dc2059f0ff2c3c5e3f6bb0408,City of San Carlos,City/Town,false,true,true,true,true
+3d3b4b2566a393aca6aed77073046846,City of San Marcos,City/Town,false,false,true,true,true
+6ae5595976d5bfc4aa238dc8d611312e,City of Santa Cruz,City/Town,false,false,true,true,false
+682c9fb3d5164fb05ae35bd7a64c4688,City of Seal Beach,City/Town,true,false,false,true,false
+175beea15d15db424078f49aa67a39c3,City of Villa Park,City/Town,false,,true,false,true
+feb2cd0d3d0cf0179bdc20c2b9d5b4c0,ICM Mobility Group,Company,true,,true,true,true
+2bf4dd9445b57d0d518cc0f668efd206,Institute on Aging,Non-Profit Organization,true,,false,false,false
+bbcc20228d1cd58993e0fe486f5f1d5f,John Wayne Airport,Independent Agency,true,,false,false,false
+a6462c645a7390e9295928b9bae63342,Jovenes de Antaño,Non-Profit Organization,false,,true,false,true
+e520e7733d6517776101c5a75f69b210,Motorola Solutions,Company,true,,true,false,false
+ef891d3e143c86e8e8844f05826dec5a,Orange Belt Stages,Company,false,true,false,false,false
+695c2c7f42b441b7c377524c7ae8c7be,Partners in Caring,Non-Profit Organization,true,true,false,false,true
+5bb57723c073fde02cfa65282724c2e1,Prime Time Shuttle,Company,true,true,false,true,true
+884d4aa2c549146545b994bb9ce5a191,San Joaquin County,County,true,,false,false,true
+981c178704db7981a55de41be783a772,Transnnovation Inc,Company,true,true,true,false,true
+1fdffd05f82612473de6bbdfff96fee6,United Checker Cab,Company,true,,true,false,false
+dbc178b0b34825fd751ae1665f7afe4e,ARC Imperial Valley,Non-Profit Organization,true,,true,false,true
+ed692fbf1c350278a7cb61d13c0fe576,Balboa Island Ferry,Company,true,,false,false,false
+c959856f320c45029016bbfe51caffc5,Bishop Paiute Tribe,Tribe,true,true,false,false,false
+17c297fe4b6a753859471884e1126329,Blue and Gold Fleet,Company,true,,true,true,true
+4930a4db041afde3f2d38dc98e8e1352,City of Aliso Viejo,City/Town,true,,false,true,false
+c93ced08d638cd940411bb2cd5ab7059,City of Amador City,City/Town,false,true,false,false,false
+69c6150bd698e7950bda09af4250b104,City of Angels Camp,City/Town,true,true,false,false,true
+6530ab958fa854292659d96998a02399,City of Bakersfield,City/Town,false,false,true,true,true
+04b7a6f9ff5f911d862cc11e68ae0d45,City of Carpinteria,City/Town,true,false,false,true,false
+d74dde8413fda5a6325fa400de20dcd1,City of Chula Vista,City/Town,false,true,true,false,false
+efdefb4aa01e2a1a631c1621774dd54b,City of Diamond Bar,City/Town,false,false,true,true,true
+f90a628561f8a0e6a4bf4ad4fc3f7113,City of Foster City,City/Town,true,,false,true,false
+c01f9f0a137c38a2d1689730466cad9d,City of Lake Forest,City/Town,false,true,true,true,false
+0a6a781eb557f214671381e2237bf32a,City of Lemon Grove,City/Town,false,false,true,false,true
+86c275b3a32e2a872a5fddd55128352c,City of Morgan Hill,City/Town,false,,false,true,true
+d4a7cbf6d18466f5ecbb803b265405f5,City of Orange Cove,City/Town,false,true,true,false,false
+6d0ce2cc3836dd7858be1bf097b37cf9,City of Paso Robles,City/Town,true,,false,false,true
+82b0e2f6668e2d0123d8d1fe79fedd1c,City of Pico Rivera,City/Town,true,,true,false,false
+24ee82f840ca0c51713b992e915c0ed0,City of Pismo Beach,City/Town,false,,false,false,true
+85d64fa1066c229fac7d22594688fe2e,City of Porterville,City/Town,true,,false,true,false
+41aae86af8ed7c955dcfc0f22d56858a,City of San Joaquin,City/Town,false,false,true,false,false
+6e58ffaa274427c7ec3c7e94e4957287,City of Santa Paula,City/Town,false,,true,true,false
+6bb29632a6adb5131917183f651f2e97,City of Signal Hill,City/Town,true,,false,true,false
+ace0dc97cfe9ea41dcb5f045cf15899c,City of Watsonville,City/Town,true,true,false,false,false
+4dfe079620d0d942257ca42c04157df8,City of Westminster,City/Town,false,,true,true,true
+2d2b5bc9da0b663b156731a76f7352b5,City of Yorba Linda,City/Town,true,false,true,true,false
+3899664160908f920d141fbeff0f63b8,Clever Devices Ltd.,Company,true,false,false,false,false
+8007bf187089a86da41395fa1930d013,Fronteras Del Norte,Company,false,false,true,false,true
+11512ad9f12424b45259fb72e658abf4,ISC Applied Systems,Company,true,,true,false,false
+1e87e0d5b30df9e22bf51b9ac92cb4b6,Marina Taxi Co Inc.,Company,true,true,true,false,true
+9654587eb8aee7841984114266162930,North Bay Taxi Inc.,Company,true,false,true,true,true
+39f47ffec282397cef0e2052940bc773,Passio Technologies,Company,true,,true,true,false
+51eded9f99aaa0cbfec54ae96455aafe,Stanford University,University - Private,true,,true,true,false
+de351a1dadea0f5d8794d723145bb0b4,Tait Communications,Company,false,,false,true,false
+b883a7cc8dcde6191b29c33a647cccf0,The Routing Company,Company,false,true,true,false,true
+c8a568d072126b4fe7b244561c5958c8,Ukiah Senior Center,Non-Profit Organization,false,true,true,true,true
+c7434bc96c3bf00aa10227618561ccfe,Alameda Loop Shuttle,City/Town,true,true,false,true,false
+38028d1dd21b8c13e02a61b85c25c114,Becoming Independent,Non-Profit Organization,false,,true,false,true
+0968f87e8f906fa7f3e925d91f7a9c7e,City of Agoura Hills,City/Town,false,,true,true,false
+0f8cea4cf87f83b52b26b736c3bfb6f2,City of Del Rey Oaks,City/Town,false,,false,false,true
+1d91b94c1166c07eeead2fdf8522188a,City of Farmersville,City/Town,false,true,false,false,true
+6903afef4076c09051ec2e1c8bb6dabb,City of Garden Grove,City/Town,false,,true,true,true
+25da7e8adf5a822ac1240c044819b1de,City of Grover Beach,City/Town,true,,false,false,false
+11eae65e15390922dbf6738f8a0c19bd,City of Hillsborough,City/Town,true,true,false,false,false
+bac5a6ff250b88088a17c4fc3764ae93,City of Laguna Hills,City/Town,true,false,true,false,true
+ac3a3d8032081801c60bf6e386c060b9,City of Laguna Woods,City/Town,true,false,false,true,true
+07d9da9fae1660e82d16486d43dfb87b,City of Palm Springs,City/Town,true,true,true,true,true
+8a7388bd1dc904395c17d6d5bce86fa1,City of Redwood City,City/Town,false,true,true,false,false
+b86e13ad79d0a98299fa8d911f02ec1f,City of San Fernando,City/Town,true,,false,true,true
+94d518071ff423e91187549774ea5f67,City of Solana Beach,City/Town,true,true,false,false,true
+b901378d8da54df3b8578210a268225f,City of Sutter Creek,City/Town,true,true,true,false,false
+622467d000ce460042dfb137c03f8226,College of San Mateo,Community College,false,,false,false,false
+7833dafb4e79ff07589cccfa1d1cf24d,Damaris Express Inc.,Company,true,false,false,true,false
+83c8fba7edeeb725765443b253565c95,Faith in Action Inc.,Non-Profit Organization,false,,false,false,true
+3370c5f857fc66e65cc5a61345f4b85a,GMV Syncromatics Inc,Company,false,,false,false,true
+2de0dd5eea5b0e83a383f9254c2a7260,Hanover Displays Ltd,Company,false,true,true,false,true
+edd93e12bea2a58ba245b9f1c8ab4f15,Monument Impact Inc.,Non-Profit Organization,true,false,true,false,false
+ff6b8dc4f187f7ca3604f24232904829,Philippines Airlines,Company,false,,false,true,false
+c74df5e8f4f23295848794ed19dacea9,Rapid Connection LLC,Company,false,true,true,false,false
+033f8b709c3ad667da15e673d4136b4b,Santa Barbara County,County,true,,false,true,true
+6e7aee94bcfa150d2e9a9e259deea296,Sequoia Village Inc.,Non-Profit Organization,false,true,false,false,true
+277e5e60a1e052867e042768f62ff5dc,Stanford Health Care,Non-Profit Organization,false,true,false,false,false
+07677f19fa9fdc27fa0de22b350a3a02,The Master Scheduler,Company,true,,true,false,true
+52cd00913d3bd7d55afa25456af55f36,Willits Seniors Inc.,Non-Profit Organization,false,,true,true,false
+05575f3767611dfb52423ef6bd3b8cd1,Work Training Center,Non-Profit Organization,false,,false,true,false
+115bf6bfd06d2820a7e585bf4b862f05,Alcatraz Cruises Inc.,Company,true,true,false,true,false
+ad89e6f0fd58fc55dec7c91ab14e8d4f,Chumash Casino Resort,Company,true,,false,false,false
+f8ead93a0b6bda0a7d2b9cbd6252a5a9,City of Arroyo Grande,City/Town,false,,false,false,false
+ae1cd01b5b8c22b8df78deef359746c2,City of Half Moon Bay,City/Town,true,true,true,false,false
+9b70619ee8e174eda50813e7a160f078,City of Laguna Niguel,City/Town,true,,true,true,true
+ae9dc91192e6c08b196f9e30b53b64a9,City of Mission Viejo,City/Town,false,,false,true,true
+6fd0c03aea80cadf8a30cab67b706738,City of Mountain View,City/Town,false,,true,false,true
+21dd18b25dc938c76d4d5542f325d73f,City of National City,City/Town,true,,false,false,false
+2fd3a97d6a275a6e0cd96cff1cf60b6f,City of Newport Beach,City/Town,false,true,true,true,true
+ff6ab4d8db15fd7a8ac253283127b3c9,City of Pacific Grove,City/Town,true,,false,false,false
+203865735c99b33ec61835f766245915,City of Santa Barbara,City/Town,false,,false,true,true
+2f68f5cc95cbb9ab16845733c396f1f0,City of Scotts Valley,City/Town,true,true,false,true,false
+8036eb5820e184209326fa8f2b64dd39,Drivers for Survivors,Non-Profit Organization,true,false,false,true,true
+ace9b38a81cd29f83711dec66bbf833a,El Camino Health Inc.,Non-Profit Organization,false,,false,true,true
+850024e3c0ad8c6907eef744c1cdce53,Empire Transportation,Company,false,true,false,true,false
+a1bc92c3d8f9de21eac940f2621643df,Home of Guiding Hands,Non-Profit Organization,true,true,true,false,true
+99b30ce02606a89ed7bf44055a3a8149,North Valley Services,Non-Profit Organization,false,,false,false,false
+9d187c8447b189ec3ed130af6954fba0,Pride Industries Inc.,Company,true,,false,false,true
+ae437181045c1800dd265b772a0db462,Redwood Coast Seniors,Non-Profit Organization,false,,false,false,true
+cd2ad30164686490d3e66ddf9e47f5ec,SMA and Partners Ltd.,Company,true,true,true,false,false
+d7be0319a5e95401ecedbb248919e6fa,San Bernardino County,County,true,false,false,false,false
+d15ebc9a117580cb95b2ab467631bda6,Santiago Express Inc.,Company,true,,true,true,true
+39291b52151e55551270672c5647ae22,Solutions for Transit,Company,true,,false,true,false
+28baef6bee178c71b2c6bdd216c96666,South Tahoe Airporter,Company,true,true,false,false,false
+508fd9c6826790edf0ab6c39f6da3f47,Town of Mammoth Lakes,City/Town,false,,false,true,true
+3d268a463d7f036ebfa53975328a132e,Area 1 Agency on Aging,Non-Profit Organization,false,,true,false,false
+304187d8683bdbe5a4df2000098b8ecd,Brookfield Residential,Company,true,false,false,false,false
+78c24beff5fa385738ab095e5f5a5e85,Castle Rock Associates,Company,false,true,false,false,true
+d5278e22a316422ce2beced10aa0957b,Central Coast Cab Inc.,Company,true,,false,true,true
+f14030afe79892565a2c386dba128b78,City of East Palo Alto,City/Town,false,true,false,true,true
+2fabee0a344a788c4bad59c65d10d6bf,City of Imperial Beach,City/Town,true,true,true,false,false
+d201d0016a0f8be3f9bebd1c4da46987,City of Portola Valley,City/Town,true,true,true,false,true
+0752665e363a4cfafe4b6b74031a444a,City of South El Monte,City/Town,true,,true,true,true
+89b7c6c764d8af9c3e81acfce6a73301,City of South Pasadena,City/Town,true,,false,false,false
+7e7cc0257a48ad5fec88e1a80787a602,Community Bridges Inc.,Non-Profit Organization,true,true,false,true,false
+7e153ee9cf7aa5749e8dc9a31883cbc6,ElderHelp of San Diego,Non-Profit Organization,true,false,false,true,false
+37e529efcf58dd6db3c97dc829866bd4,Independent Cab Co Inc,Company,true,,false,true,true
+f384620262e9b23099c1bff86bd96b09,Inland Regional Center,Non-Profit Organization,false,,true,false,true
+1607de1bdb3ddbac8b355943ee9fb51f,Karmel Shuttle Service,Company,true,true,false,false,false
+58e1012d629605144b0ecac4877568da,Mackenzie Laboratories,Company,true,true,false,false,true
+885362b186680df11754046e704868fb,San Luis Obispo County,County,false,true,false,true,false
+a896ecc2a4b19a32d7b54d0d3c6039f2,Scripps Mercy Hospital,Non-Profit Organization,true,,true,false,true
+eb916fbd7aabd677126bb01076cf22ba,St Mary Medical Center,Non-Profit Organization,false,,false,true,false
+0aaeaafb87f570aef6d8c18467f146d5,Yosemite National Park,Federal Government,false,,false,false,true
+d8bf13cbee98a8cceeb41520a6f23b0a,American Cancer Society,Non-Profit Organization,false,,true,true,true
+dae6b941e29018bcbd5f334f2f21bd30,Avail Technologies Inc.,Company,false,true,true,false,true
+86e90761d8296cc3527c544ca8749683,Chemehuevi Indian Tribe,Tribe,true,false,true,true,true
+98bc17666f2d8626ee930834a48dca9b,City of California City,City/Town,false,false,true,false,false
+51df89b767cbda0184d3d59ace3b783d,City of Fountain Valley,City/Town,false,,false,true,true
+7243f572ea38cf05a03a8432e520c8ef,City of Manhattan Beach,City/Town,true,true,true,true,false
+15434339144cacef833ea180b68e71ed,Fresno State University,University - Public,false,,true,false,false
+c59dcf338cb099a9c91451f347127740,Gary and Mary West PACE,Non-Profit Organization,true,,false,true,true
+3df63dce892af3a13caabb189858a46a,GeoSpatial Technologies,Company,false,true,false,true,true
+c74052fb0a64f3001eed7a3945579372,Global Paratransit Inc.,Company,false,true,true,false,true
+ee01071e26c7385c4ef3396a975c3d0a,Pacific Crest Bus Lines,Company,true,,true,false,true
+6b2bb72037546cb2de43361d1c4302ee,Placer TART Paratransit,Independent Agency,false,false,true,false,false
+3d3f4331f907318ee0e4fb5e22fbed65,Reach Out Morongo Basin,Non-Profit Organization,false,,true,false,true
+26cdc0163043b5a4c0bb668a8edd57c4,Salinas Yellow Cab Inc.,Company,true,,true,false,false
+9cdc78c181b2690c97afe53ff4a6c88a,"San Diego Trolley, Inc.",Independent Agency,true,,true,false,true
+6c6c55305e6a0c8d385cb4a0e26d20b9,"Southland Transit, Inc.",Company,true,,false,false,false
+b310e658d99c5ff3712987223e24f79d,United Independent Taxi,Company,true,false,true,false,false
+52090f9aa3bc2374dce966c98c151d56,Age Well Senior Services,Non-Profit Organization,true,true,false,false,false
+8f913262e2c37fa1e85da7158d065a5a,Bishop Peak Technologies,Company,true,true,true,false,true
+f143813df24b127d4cee3a01129442d1,City of Hawaiian Gardens,City/Town,false,true,true,true,true
+d81f2d40bbbe48687dacc8a9fc0bef52,City of Huntington Beach,City/Town,true,true,false,true,true
+04df5ad5dd240a74aec12ee32a5d8af3,City of La Habra Heights,City/Town,true,false,true,false,false
+f5271a620a09e3ccde19778e8eaf8a54,City of Rancho Margarita,City/Town,true,true,true,false,true
+7902f851a1528b0462036430d04a5913,City of Santa Fe Springs,City/Town,true,true,false,false,false
+453870a55efed58d626110d0b039be68,Costa Mesa Senior Center,Non-Profit Organization,true,true,false,false,true
+8604b42c02e671ad42c1e4c3bfcddfa2,Easy Lift Transportation,Non-Profit Organization,true,,true,true,true
+a4fc3081e9fbb73c2a15af7f33703cd6,Forest Folk Incorporated,Non-Profit Organization,true,,true,false,true
+471bbe1865a194ed86f3e506591adae5,Foster City Village Inc.,Non-Profit Organization,true,,true,false,true
+5267ea04e284b109b78b41ba3b62492f,Humboldt Medi-Trans Inc.,Non-Profit Organization,false,,true,false,true
+863efd384039965a953e4417a34563b9,Lutheran Social Services,Non-Profit Organization,true,true,true,false,false
+a16d8cc3657768c74646715d1ae7db59,Paramount Transportation,Company,false,true,false,false,true
+4e304e012d6e8b1e1fceed509c7fc16a,San Gabriel Transit Inc.,Company,true,true,false,true,false
+8775dfe1e1245b251456622aa555af4f,St Pauls Senior Services,Non-Profit Organization,false,,false,true,false
+03e88a254a0b772c8d6b42b2cab24a2a,Bureau of Land Management,Federal Government,false,true,false,true,true
+89463ca9da02dd44ca2708eae9d7b0d7,Cambria Community Council,Non-Profit Organization,true,,true,true,true
+288f8c5b50e97f31b3954562f8cdd87b,City of Carmel by the Sea,City/Town,true,,false,false,false
+bb5f7675566289771d5c31133afd4fd6,City of San Juan Bautista,City/Town,false,true,false,true,false
+673a7e591641e240fdae29c03c57ab8f,Deaf Plus Adult Community,Non-Profit Organization,false,,false,true,false
+c5386d8388e9dac426b7e276930c7bb7,Milestones of Development,Non-Profit Organization,true,,true,true,false
+9e515a57a898532533faeb5d1b0ff84f,Self-Help for the Elderly,Non-Profit Organization,false,,false,false,false
+3724d7fb3096821fe71e381dd36ed87b,Valley Achievement Center,Non-Profit Organization,true,,true,true,false
+0f50de3d1ace190137d41dcb5b4ce49d,Cambridge Systematics Inc.,Company,false,true,false,true,true
+6c812453f051751c1a3efd50ae757bad,Constellation Software Inc,Company,true,true,true,false,false
+361fd77d61ffe1791f811be8b777142e,Disneyland Shuttle Express,Company,false,,false,true,false
+76b85a07b0a09d44c63a98916b60a98f,Foundation for Senior Care,Non-Profit Organization,true,false,true,false,true
+ea0cf61638dad283f2625b4558da02a1,Luminator Technology Group,Company,false,,true,false,false
+b8ff518ef9913f855b8d7a5170674cd5,Monterey Peninsula College,Community College,true,true,true,true,false
+bc5312e02ff836df2214510c02283a7c,Network Paratransit System,Company,true,true,true,true,false
+db5dca4d626cfdb743b294bc4842707c,Parking Company of America,Company,false,,false,true,false
+e1bf9515fddbc5dbbba57aceb9c03e85,"Peninsula Volunteers, Inc.",Non-Profit Organization,true,true,false,true,false
+e5ffd95d67c71f52bb06e0a0222d4967,San Diego State University,University - Public,true,false,true,true,false
+a069163b623750be7504eed3cb8f7763,Santa Barbara City College,Community College,false,,true,false,false
+c3f9ea9c472a79802c9280f454c8b03c,Torrance Memorial Hospital,Non-Profit Organization,false,,false,true,false
+5cd75b6277f833b2feb73bdc841e864a,TransTrack Solutions Group,Company,true,true,true,false,false
+88884a6446a37be7a80fef322762f163,Tulare County Area Transit,Independent Agency,true,true,true,false,true
+abd3f545c13115357b43ef0c92873cc9,Ventura Transit System Inc,Company,true,false,true,true,false
+f5270de34013ecf840c52f0919a09b98,Catalina Island Conservancy,Non-Profit Organization,true,true,true,true,true
+e498b605bcc3daccdebafd2770e807d2,Kern Council of Governments,MPO/RTPA,false,false,true,true,true
+1326a57c32979799fa90bb240200c635,LOSSAN Rail Corridor Agency,Joint Powers Agency,false,true,true,true,false
+803629c2c3b43bd47f2ab545108ab984,Lassen Senior Services Inc.,Non-Profit Organization,true,true,true,false,true
+386bd8455455692863191dc2537638e6,Loyola Marymount University,University - Private,false,true,false,true,false
+31bf7eedb2f3501e5aeb7f7880e6a309,Metro Transit Services Inc.,Company,false,false,true,true,true
+e3d7272f0bef9422ecb6b390f6d46dc9,Sacramento State University,University - Public,true,true,false,true,false
+3ef48ff40b6f01e4cc4758e0c6cc75cf,Storer Transit Systems Inc.,Company,false,true,true,true,true
+f7a10f9e64250ef740961af67cc821c0,Automated Business Solutions,Company,false,true,false,false,false
+f15e3bcf6928fa4ead28b4018a8a43cd,California Vanpool Authority,Joint Powers Agency,true,,false,true,true
+94cae2481e86f1ebd135b9788718eeae,Marymount College California,University - Private,false,true,true,false,false
+fe3408e4affef6d531dce96a92fde772,Mobility Management Partners,Non-Profit Organization,true,false,true,false,false
+72726874dbd6f0ed5c3573c6950847c4,Transportation Concepts Inc.,Company,false,true,false,false,false
+102b5e5027dcd2280a37df68d1d14744,"Veolia Transit Services, Inc",Company,false,,true,true,false
+69f0537c7020694b7f65ff22c24abfc9,Anderson Valley Senior Center,Non-Profit Organization,true,true,true,true,true
+62b554f559efd2ae11739cb8f9195674,Black Tie Transportation Inc.,Company,true,false,true,false,true
+7fc2d46e57d1c5b35afb7641c3f6d750,City of La Cañada Flintridge,City/Town,true,true,false,true,true
+9f77e3e5fd63c87ee64cdfd874373e66,Common Ground Senior Services,Non-Profit Organization,false,true,true,true,false
+aaf2ef32c768ccd2b550615cd6e07b21,Fresno Council of Governments,Joint Powers Agency,true,false,true,false,true
+a1848105aafd3f19ea8e902549f91ce0,Oakland International Airport,Independent Agency,true,,true,false,false
+28eaab0fd1979e99d161042a40ec0ff6,Ontario International Airport,Independent Agency,false,,false,false,true
+94505d4f05628998356d0f3e8bf06cad,San Diego Transit Corporation,Independent Agency,false,true,false,false,true
+28e4126901e14e2f006feb70a4fd48f4,Sonoma County Airport Express,Company,true,,false,true,false
+903543612245e116d28f3d45740091f3,St. Madeleine Sophie's Center,Non-Profit Organization,false,,false,false,true
+a6e46a6b15cf3a843115e3f1d31dfbee,California College of the Arts,University - Private,true,true,true,true,false
+49b0a298647af571caf3e5562cc75441,Camarillo Health Care District,Independent Agency,true,,false,true,false
+e95271363b6610fd7e5de423e4363c03,Federal Transit Administration,Federal Government,false,,false,true,false
+0bb93150d6b9a076fe7685ace2201f23,Independent Living Partnership,Non-Profit Organization,true,,false,false,false
+189f4d9b9a0d0dd64e10d64b48ad5516,Modoc Transportation Authority,Joint Powers Agency,false,true,false,true,false
+9e75602a8330df9a6080023c5dc98541,Mountain Shadows Support Group,Non-Profit Organization,true,,false,false,true
+b9eba20d6e7ef6d43d0f43bde116a7b6,Point Loma Nazarene University,University - Private,false,true,false,false,true
+696e17254c82f502983e1e048d24d761,Porterville Sheltered Workshop,Non-Profit Organization,true,false,false,false,true
+6d46734bb9135692331735c00f0cd4dd,Shasta Regional Transit Agency,MPO/RTPA,true,,false,false,false
+1023201abf09e66079b2ad17d1bdc12d,Tahoe Regional Planning Agency,MPO/RTPA,true,true,true,false,true
+8ad22a34ed8f192401322996d91b783f,West Valley Community Services,Non-Profit Organization,true,,true,false,false
+3183bf33dc12ff6410948c0f5a938ab3,"American Logistics Company, LLC",Company,true,,true,false,true
+6732fe71538960532af6f1ac698d6d05,Care-A-Van Transit Systems Inc.,Company,true,,false,true,false
+ef2492f9cd52bd977f50864a3ee67c24,Casa Allegra Community Services,Non-Profit Organization,true,,true,false,false
+84df25815fbf40a10a1b070343a8b899,Center for Elders' Independence,Non-Profit Organization,false,,true,false,true
+296642e1b1c350cd52252e53454b0234,"Desert Access and Mobility, Inc",Non-Profit Organization,false,,true,true,false
+7b44e4e4729c2a9832d6b4b778b351e4,East Bay Paratransit Consortium,Joint Powers Agency,false,,false,false,false
+481aa94026569b13a5d5e4b9e8b3430d,Easy Does It Emergency Services,Non-Profit Organization,true,,false,false,false
+8bfd26c0d2cae5ef093b34dcf7a8823d,Hella Aglaia Mobile Vision GMBH,Company,false,,false,false,true
+7f103becf57a6cd4a932da47c0b18570,Humboldt Senior Resource Center,Non-Profit Organization,true,true,false,false,true
+322e2afbbb4136d22f92a2af4a5aa26f,Morongo Band of Mission Indians,Tribe,true,,true,true,true
+e17fb75774323ca298cb86f3b272f8fc,Sierra Point Owners Association,Company,true,true,false,false,false
+87e49c177fa9d9855d86d55b1a684e0b,The Arc of Amador and Calaveras,Non-Profit Organization,true,true,true,true,true
+0945b16f79a7c8c6397cc3b28cbd7f1d,Calaveras Council of Governments,Joint Powers Agency,false,true,false,true,false
+0943db6b9487f019f035ab5df92014bc,Flagship Cruises and Events Inc.,Company,true,,false,false,false
+3aeaf20b93bb4fba7a22a6d4af49b45c,Mendocino Council of Governments,Joint Powers Agency,true,true,true,true,true
+43d8236693d4e621c369161b42f56f59,Open Transit Software Foundation,Non-Profit Organization,true,,false,false,true
+122d42a65c14d0a4fc188f097b743fb9,Regional Center for the East Bay,Non-Profit Organization,false,true,false,true,true
+bc430d483bafa6fd5c259f646adcfc33,Sacramento International Airport,Independent Agency,true,false,false,false,true
+3d68503eba355e0763ab48f1576701b2,South Side Community Connections,Non-Profit Organization,false,true,false,true,false
+54fa7301687ebbf0cdb0fed948ce619e,Turning Point Community Programs,Non-Profit Organization,true,,true,false,false
+390c2d3f940c61be3e68c6555c3933c8,Bakersfield Airport Valet Express,Company,true,true,false,true,true
+8e053dfc83945bdb19416fe513508d97,California Pacific Medical Center,Company,false,,false,true,true
+30fc52b7a53335c6316b8bd84c70a8e0,Charitable Adult Rides & Services,Non-Profit Organization,false,false,true,false,false
+a8bf0d914ed04530480316223124d95c,Medical Transportation Management,Company,true,,false,false,false
+a0957f1417f86322298acba5768daf30,Peninsula Jewish Community Center,Non-Profit Organization,true,false,true,false,false
+129b29d2a017c00716c0c5272e13ee55,Stanislaus Council of Governments,MPO/RTPA,true,false,true,false,false
+eafcf7d90601a18bc10805020e072629,University of Southern California,University - Private,true,false,true,false,false
+507bc0a8033811fa1c87f1976fd7cb80,Volunteer Center of Sonoma County,Non-Profit Organization,false,false,true,false,true
+ffe10cb20f40aebe579e4de5e1dcc3fa,Angel Island-Tiburon Ferry Company,Company,false,,false,true,false
+59e10c9d9b7451998ecaede77836d463,Jewish Family Service of San Diego,Non-Profit Organization,false,false,false,false,true
+517ae80416faab04ab69d6c270265ce9,Lodi Memorial Hospital Association,Non-Profit Organization,false,,false,false,true
+ea167e6149205c59b03f2e45f0741758,Riverside University Health System,Non-Profit Organization,true,true,false,true,true
+275697f31ca5cd487d45a41ab55cbc0b,San Joaquin Council of Governments,Joint Powers Agency,false,false,true,false,false
+e0bbd45fdef3c0ea030866c75f5d07d7,Brisbane Village Helping Hands Inc.,Non-Profit Organization,true,,false,true,false
+4b84844a9a49814cf088178be6143333,Central Coast Shuttle Services Inc.,Company,true,,true,false,false
+dac3a606d7350e5f9fe7364a22198e73,Northern Inyo Healthcare Foundation,Non-Profit Organization,false,false,false,false,false
+ee720e8a2dced088ed309bb762deaae1,California Integrated Travel Project,Independent Agency,true,,true,false,true
+2610b96ed1602eaa0fe2140c781f837a,California State University East Bay,University - Public,true,false,false,true,false
+071f8286aeac31e9416e8560d42fbe65,Central California Nikkei Foundation,Non-Profit Organization,true,,false,false,false
+9d1572f756bb56a3746e2ec17730f34e,"Express Transportation Services, LLC",Company,true,,true,false,false
+f5f308b851762a1eeb4aa35de41265aa,San Diego Association of Governments,Council of Governments,true,true,false,false,false
+579875fbea87ccd4d90869901de1860d,USDA Forest Service Southwest Region,Federal Government,false,,true,true,true
+2e53a52b95362fdd371887ca0756d983,Contra Costa Transportation Authority,Independent Agency,true,true,false,false,true
+eadeab3647989a0f05f6a9bde5897933,Historic: Stanislaus Regional Transit,Independent Agency,true,,true,true,false
+88ffdc860f46dd9989a348d522bde09d,Lawrence Berkeley National Laboratory,Non-Profit Organization,false,false,true,false,false
+51866b562b8ae2243def7d4adf333c32,"Tule River Indian Health Center, Inc.",Company,true,true,true,true,true
+d7265c2e65819e2cadd8ad54c373a0e6,"Volunteer Transportation Center, Inc.",Non-Profit Organization,true,true,false,false,true
+6ce997bbbbac7759fb8a337709250d8c,Bay Area Outreach & Recreation Program,Non-Profit Organization,false,true,false,false,false
+41e35ac11609881f450085bf5a1ea247,California State University Long Beach,University - Public,false,true,true,false,false
+acd3dcb9dac489ddca1a7bffd30472bf,California State University Northridge,University - Public,false,true,true,false,false
+eccb5450a4548d35a1d988992d7aaff5,Fidelity National Information Services,Company,false,,true,false,false
+355ee639cf9eb19f6f3c8b114ab0d8fb,Friends of Children with Special Needs,Non-Profit Organization,true,,false,false,false
+05a07c7305446f6c02e142e4ec4e04e7,Glenn County Transportation Commission,Joint Powers Agency,false,true,true,true,false
+c32588f7d10bac144d1c16f9c6ee29ce,Lake County/City Area Planning Council,MPO/RTPA,true,true,false,true,true
+e51e6ef77e0aad6d76a880f5376a5076,Metropolitan Transportation Commission,MPO/RTPA,true,,false,true,false
+62f200bdb2391578ac009871e18c56fe,Pomona Valley Transportation Authority,Independent Agency,false,false,false,true,false
+617dc66c524d9de9e51a924cb072a9ed,Sacramento Area Council of Governments,MPO/RTPA,true,,true,false,true
+16648617a3ebff0e689013f4e133c7c2,San Luis Obispo Council of Governments,Council of Governments,false,false,false,true,true
+bfad8cfcbe8ebf3e2dbbb26bb3213361,Tuolumne County Transportation Council,Independent Agency,false,false,true,false,true
+ccd18367c05c27594bed177f41887638,Amador County Transportation Commission,MPO/RTPA,false,true,true,false,false
+92d05f4a5c01b51e8dbd7e4ff144631c,California Department of Transportation,Independent Agency,true,,true,false,false
+4ffc71c27a6d1d9be1eccfb7ee8cf5f7,Colusa County Transportation Commission,Joint Powers Agency,false,false,false,false,false
+e0ca8da3dfcc4968739eaf88573adec2,Consolidated Tribal Health Project Inc.,Non-Profit Organization,true,false,true,false,false
+4e2cee41903fa4cad8597b8837c816f7,Kings County Association of Governments,Joint Powers Agency,false,,true,false,false
+9175445d2a87f33c490f1a98a2e3335f,Lassen County Transportation Commission,Independent Agency,false,false,false,false,false
+2e1d5f35abe7b03f097c611fee76b0d2,Madera County Transportation Commission,MPO/RTPA,true,true,false,true,false
+b0bf6c4b14dd684b2e814eed6869dbc4,Nevada County Transportation Commission,MPO/RTPA,false,true,false,true,false
+82935d18b1d7c690afff9ae57a056b75,Plumas County Transportation Commission,MPO/RTPA,true,true,true,true,false
+33b12edcfe41b826b662638c711640c9,Sierra County Transportation Commission,MPO/RTPA,true,false,false,true,true
+414a3410a1c54dc416f2a5c0241e515b,Tehama County Transportation Commission,MPO/RTPA,false,false,true,true,false
+f3d0107e92a5ec5128e28841085cc267,United Taxi of San Fernando Valley Inc.,Company,true,,false,false,false
+455fe5c03baf60204002ad63b80477da,Council of San Benito County Governments,MPO/RTPA,false,false,false,false,false
+f6a10e4e55e085f58781b5985345cc01,Heart of the Valley Services for Seniors,Non-Profit Organization,false,true,false,true,true
+52d0f1cd9f193f42743a624a91a1d94c,Merced County Association of Governments,Joint Powers Agency,true,true,true,false,false
+e106b4bd533c26eca51b570584e59edb,Roadrunner Shuttle and Limousine Service,Company,false,true,false,false,true
+151b0421e916194f06279862098f05ae,Trinity County Transportation Commission,MPO/RTPA,false,,true,false,true
+b59bc151edd2b46aad56f7c5e9919137,Tulare County Association of Governments,Joint Powers Agency,false,,true,false,false
+2dd90f7e1f461b506abd16ff9a08a1a2,Victor Valley Community Services Council,Non-Profit Organization,true,,true,true,true
+965609783457b96434586193fb93c555,Del Norte Local Transportation Commission,MPO/RTPA,true,true,true,true,true
+c9f7836511c60cb681eea934475f13f7,Hi-Desert Memorial Health Care Foundation,Non-Profit Organization,false,,false,true,false
+be30ecc1acdd0ff09da4568dea05c547,Inyo-Mono Association for the Handicapped,Non-Profit Organization,false,,true,true,false
+7dc04e7d472dc4ee02b585eb6a2dafbf,Saratoga Area Senior Coordinating Council,Non-Profit Organization,false,,true,true,true
+6d98290cb076b5258dc87fd544eb96c0,South Bay Yellow/United Checker Cab Co-op,Company,false,,false,false,true
+5cc44f5157db2b8f05aabb9da4c11078,Transportation Agency for Monterey County,MPO/RTPA,false,,true,true,false
+a6bffbecadc26eea033b8f7901bcbe03,California State University San Bernardino,University - Public,false,true,true,false,true
+69479acfe31d644820a3aae5c898d3f8,El Dorado County Transportation Commission,MPO/RTPA,true,true,false,false,false
+3b7b314df6e7a7194ac46688005af41e,Humboldt County Association of Governments,Joint Powers Agency,true,,true,true,false
+c4ee6156bf76c7ed150fe8806ad32ff6,North and South of Market Adult Day Health,Non-Profit Organization,true,,false,false,true
+60c8cb0f13ff6158d8be785af12de27d,Oregon Department of Transportation (ODOT),Independent Agency,true,,true,true,true
+7124cd864b857e11f5c2e4d5c114158a,Riverside County Transportation Commission,MPO/RTPA,true,false,true,true,true
+09926fe62623fc063e7972aec537b14a,Asian Community Center of Sacramento Valley,Non-Profit Organization,true,,false,true,true
+45ed7120e2d2640fd410218a83da60c4,Inyo County Local Transportation Commission,MPO/RTPA,true,,true,false,true
+9c0da9e04c6a67b3eec12e7641606e3c,Mono County Local Transportation Commission,MPO/RTPA,true,true,false,false,true
+a8550c0239334818f80a4052c5d32f54,National Express Transit Corporation (NEXT),Company,false,true,false,true,true
+3ec89503b725392719a4c4312a326cbc,North of River Recreation and Park District,Independent Agency,true,true,true,true,false
+3bc5a4ce369950f15627dc270381646f,Association of Monterey Bay Area Governments,Joint Powers Agency,false,,true,true,false
+c61ef2bee7a4d04a4c245fe116fbc57b,Klamath Trinity Non-Emergency Transportation,Non-Profit Organization,false,,false,false,true
+1476a1d61341ff20c4403e68f8327d1a,Mission Bay Transportation Management Agency,Non-Profit Organization,false,true,true,true,false
+8686703881c57cbaff22964f5132098b,Modoc County Local Transportation Commission,MPO/RTPA,false,false,false,false,false
+47caad44996d87a85b4c14ddfbc5dd89,Newport Beach Friends of Oasis Senior Center,Non-Profit Organization,true,false,true,false,true
+ee514007de6d0ca5ca6336351bc00558,Placer County Transportation Planning Agency,MPO/RTPA,true,,false,false,true
+0ec0f74a8b9aaed918474dadf52a877b,Alpine County Local Transportation Commission,MPO/RTPA,true,,false,false,false
+dcbb9a1169a292a4d3edd397c54a0cb2,Catholic Charities of the Diocese of Stockton,Non-Profit Organization,false,,false,false,false
+33665cbc93e7abe376ef9cfc99283f80,Incorporated Senior Citizens of Sierra County,Non-Profit Organization,false,true,true,false,false
+9ec31543dc9fec09f31411d064cacc00,Camping Unlimited for Developmentally Disabled,Non-Profit Organization,false,false,true,false,false
+199300ce07fa8b33a5eeca2ef2429028,Satellite Affordable Housing Associates (SAHA),Non-Profit Organization,false,,true,true,false
+7f4b741b5cc42d4987d611fd5365f953,Southern California Association of Governments,Joint Powers Agency,true,,false,true,true
+100b94a15d097469a628eb45e9b22bea,Dumbarton Bridge Regional Operations Consortium,Joint Powers Agency,false,,true,true,true
+fa4580e978d849cdad3ebdc1920c9dc1,Mariposa County Local Transportation Commission,Independent Agency,true,true,true,false,true
+b715f8bcf0bae3067f09df3a1ab73b2b,Norman Y. Mineta San Jose International Airport,Independent Agency,false,,true,true,true
+ad6eef0d451291bf530cd06221b39b25,Siskiyou County Local Transportation Commission,MPO/RTPA,true,true,false,true,false
+a2ef3fc3e5c38a377a7244fe8f54b6e5,United Cerebral Palsy of San Luis Obispo County,Non-Profit Organization,true,true,true,false,true
+ab300b864c19f91c939306b68803ecbf,Facilitating Access to Coordinated Transportation,Non-Profit Organization,true,true,true,true,false
+f6a6df6d90be249778c1799f203cda30,"Golden Rays Senior Citizens of Sierra County, Inc.",Non-Profit Organization,true,,true,false,true
+d3859f5fc406c18904c36f79fe272608,North Fork Rancheria of Mono Indians of California,Tribe,false,,true,true,true
+db5b0aeac7bcaa62812aed9eb741f7cf,Westminster on Wheels Senior Transportation Program,Independent Agency,false,true,false,true,true
+dd619cb98f52e708ff821e3d97301166,Santa Cruz County Regional Transportation Commission,MPO/RTPA,true,,false,false,true
+868e08e1a99c192fe0457e32db7a0cdd,Shasta County Regional Transportation Planning Agency,Independent Agency,true,true,false,false,false
+5b6fa124ef9464318e386460f7851479,United Cerebral Palsy Association of Greater Sacramento,Non-Profit Organization,false,,false,false,false
+30521027effd08dd98fb46b71dc4b35c,"Delano Association for the Developmentally Disabled, Inc.",Non-Profit Organization,true,,true,true,false
+9592125c3c09af1dabc7437927342e88,Western Placer Consolidated Transportation Service Agency,Joint Powers Agency,false,,true,true,true
+f79e6c6d2247ad16dcd34868ccd33b6c,Santa Maria Organization of Transportation Helpers (SMOOTH),Company,true,true,false,true,true
+aec69385d6e522599579d70e20ede115,City and County Association of Governments of San Mateo County,Joint Powers Agency,true,,true,false,true
+2b8220f64403d246a4c59d3c1b65daa9,Michigan Technological University Center for Technology and Training,University - Public,false,false,false,true,false
+1d03fdbc2e4dfd044465b4437e70c9e0,POINT,Independent Agency,false,,true,true,true
+e8f13022ac8ecff976188979ac903d4a,Amtrak,Federal Government,false,,true,true,true
+9074e1957858b805e69e1e02cd44a615,OmniTrans,Independent Agency,false,true,false,true,true
+d4d53f5a85cec17582000a9e67a7d642,Commute.org,Joint Powers Agency,false,false,true,true,true
+f2b17a6f6d40742928c57acf4f2a27ca,Kern County,County,true,true,true,false,true
+2cc1763742d0878f9a6b34c83f1fa363,City of Bell,City/Town,true,false,true,true,true
+969342cc5212482ff2998b14420f53dc,City of Lodi,City/Town,false,true,true,false,true
+ad52041b51b473f3892635b1a1b807ca,City of Ojai,City/Town,false,,true,false,true
+3152ccbc3d5901bb7c3e22effbb9910d,City of Taft,City/Town,true,true,false,true,true
+b5b0b360d2af265dae299dbb5e920fbf,Glenn County,County,false,true,false,true,false
+e0cc20bf6ea44a7ac0ad270987a5f7d5,City of Arvin,City/Town,true,,true,false,false
+784bfe848eb7380f524d3cf075b1280b,City of Ripon,City/Town,false,,true,true,true
+f6625314b11a824f8c070a5e2ab7f636,City of Tracy,City/Town,false,,true,false,false
+f0c1ce15ec6643ae3670c6b8cc89dbdc,Madera County,County,false,,true,true,true
+57d244d29c7ae4574b380b4f445ad503,Nevada County,County,false,,false,true,true
+1cfe65a7cbd2b064226f1d9b554afe20,Placer County,County,true,true,true,false,false
+d226ea9e1ef1e5042833945ac0293967,Sonoma County,County,false,,true,false,true
+0318fd1804dd54560fbffea41d7d4fd9,Tehama County,County,false,,false,true,true
+987494b07b442d9135b4ccc863095755,City of Arcata,City/Town,true,true,false,true,true
+553b801049ec58f76693323b8a9e89b3,City of Auburn,City/Town,true,,false,false,false
+232d7ac0cb796fa82502c9cecb2734da,City of Avalon,City/Town,true,false,true,true,true
+17b1533e3db2090ee03baec634cecc2e,City of Clovis,City/Town,true,true,false,true,true
+cb95ac1134223f0ec8c063a9783aa326,City of Corona,City/Town,false,true,false,true,true
+d71fcf096621f638a2d32787e4542b95,City of Cudahy,City/Town,true,false,true,true,false
+e9a821b5c03a134f5fad1a26eca9aa2f,City of Delano,City/Town,false,true,true,false,false
+99739ef054136b7488e730efae201674,City of Downey,City/Town,true,true,true,true,true
+96dad39f82f9e3f51d5d47d8c579f225,City of Duarte,City/Town,true,true,false,false,false
+92239e21eecb1027fe3240bd4e14eecf,City of Eureka,City/Town,false,,true,true,true
+68042c9add3f4c71ed8a9072a66bb226,City of Fresno,City/Town,true,false,false,false,false
+26c1f343e1aebdc0441a9dbe9e625804,City of Lompoc,City/Town,false,true,false,true,false
+ba4d6846a2d7c8f86450890bb89a31a2,City of Madera,City/Town,false,,false,true,false
+77f23c9ab7bdd0e06a3bee35b5dd30e7,Trinity County,County,true,,true,false,true
+aa85b1ea74f3c9d31dc883949ec16e2c,City of Arcadia,City/Town,false,,true,true,true
+2d4cd8b3804a702b2c2b9ce382080d99,City of Artesia,City/Town,true,false,false,false,false
+eb4e7aef4219ade66cc1b27442f90372,City of Burbank,City/Town,true,true,false,true,false
+82eda00a93a4e02f2967573696f2e097,City of Compton,City/Town,true,false,false,true,true
+e1a11a158365ff62f72f4e50dd47229e,City of Escalon,City/Town,false,,true,false,false
+71f3697536ecb0a58e2e6e32b2c4125d,City of Gardena,City/Town,false,,true,false,true
+a84057d884a83d5121f24af81a49f723,City of Lynwood,City/Town,true,,false,false,false
+5726d61245e749016750c2593d6c299e,City of Manteca,City/Town,false,true,false,true,false
+9603ff4f5b30446da21407316c83e358,City of Maywood,City/Town,true,,true,false,false
+4c1e5cc15722e45a685afe08aa75151a,City of Needles,City/Town,true,true,false,false,false
+88b1ba8df16dc8eb54edde82beca91d3,City of Norwalk,City/Town,true,,false,true,true
+526cd972aa53bad4e41d5f56e0941040,City of Shafter,City/Town,true,true,true,true,true
+7d1b71cf9af53a6195b12d0df79d60ab,City of Solvang,City/Town,false,,false,false,false
+9c5e5e32e2017a988044a5a7091ed632,City of Turlock,City/Town,true,true,true,false,false
+a42d11a187253aa4775529a4fc62db12,City of Visalia,City/Town,true,false,false,false,true
+2718e53aa408aa4fe9abfc7bedaca87a,Siskiyou County,County,false,false,true,true,false
+c21ba4186d555066bbbd719e8ca35ddb,Skyline College,University - Public,false,false,false,false,false
+be41706fee5031fece4d55e81b0505ac,City of Alhambra,City/Town,true,true,true,false,true
+2452010e249a5f27fc5cc30910643214,City of Beaumont,City/Town,true,false,true,false,false
+0234be107ed1c128ed68668ed3f7dabe,City of Cerritos,City/Town,true,,false,true,false
+38d1c97a7503389480ead46326c58b56,City of Commerce,City/Town,true,true,true,false,true
+8e76f2ed0603f495a1ee4a23df325f76,City of El Monte,City/Town,false,true,false,false,false
+c66054b1b143ee1864471d0afe64a906,City of Glendale,City/Town,false,,false,true,true
+b0e19a07f14dde44e857e62d0cee247f,City of Glendora,City/Town,true,false,false,false,false
+badd79f761566f61e84701f438b3de57,City of Lawndale,City/Town,true,true,true,true,false
+2e0d06aa997b648456276214cb0b5087,City of Moorpark,City/Town,true,true,true,false,false
+3592db816df3254dc076fb815c783e2a,City of Pasadena,City/Town,true,false,false,false,false
+1e3adba6bc5b9d7e04f107c298464faf,City of Petaluma,City/Town,false,,true,true,false
+bb5be84eaffb18b945ec3f4e60c52179,City of Rosemead,City/Town,false,false,false,false,true
+e9b1d29e53db99e06ee884a8fe1bb570,City of Torrance,City/Town,true,,false,true,true
+5bfbbb1c5d683b487d0934d59ea33eb4,Foothill Transit,Independent Agency,false,true,true,false,true
+de63b4a39ea04989729a50b6b058606f,City of Calabasas,City/Town,false,false,false,false,false
+155e8af845792848178ddcc8b7acc5dd,City of Camarillo,City/Town,true,true,false,true,false
+a1f9b07e778204c8fbbdf279a7ba6ca2,City of Elk Grove,City/Town,false,,true,false,false
+60f787d7a56c6d838fea763d37e5f21e,City of Fairfield,City/Town,false,true,false,false,false
+1de0674455ae5d11849e14d61eff2853,City of Guadalupe,City/Town,false,true,true,false,true
+58339c80b42cde26236942c0cc6a4892,City of Inglewood,City/Town,true,,false,true,false
+1c1a9850ea30294d4cdf272a80ea4f69,City of La Puente,City/Town,false,,false,false,true
+48a96c9f6a0b599ea8207b39183fefc7,City of Morro Bay,City/Town,false,true,true,true,false
+c863a667cbbabeb5bdf0aab57aad9247,City of Rio Vista,City/Town,false,,true,true,false
+573d134c3bb3b73b6f64c2586f25cd3a,City of Roseville,City/Town,false,true,false,false,true
+6037f87fb699d7a2cdb8d67c17726e45,City of Vacaville,City/Town,false,,false,true,false
+284b26fbcd30f0d22011b2e050a7449f,Rio Hondo College,University - Public,true,false,true,true,false
+41d186ab86e5837873a848339c8a822e,Sacramento County,County,true,false,true,false,false
+79e42a2d6056cc685387ef9187daf794,Santa Cruz Harbor,Independent Agency,false,true,false,false,true
+9fb7fdedcf8af57af228b7dea7698dd1,Big Valley 50 Plus,Non-Profit Organization,true,,true,false,false
+3ef058d5ae270d33dbfefe61c2e0505d,City of Bellflower,City/Town,false,true,true,true,false
+ff2b02f756018499015e944e0e61a72f,City of El Segundo,City/Town,true,true,false,true,true
+8ecf4c05adbe3f88d82ca3ad5fdc56b2,City of Montebello,City/Town,true,true,true,true,true
+ec65a47b3c2636e16327da33fc22ca8d,City of Santa Rosa,City/Town,true,true,false,true,false
+fbfe92932bb4431ce1d596a1bae97c24,City of South Gate,City/Town,true,,true,false,false
+88ec845f6bd3b1b6c749257ed7bab6e3,City of Union City,City/Town,false,false,true,false,false
+0bd2a304e7594672687a0dfdc37d1f62,Cloverdale Transit,City/Town,true,true,true,true,false
+874250a40cd117d5fe54798f4a048fb4,Gold Coast Transit,Independent Agency,true,,false,true,true
+e03ee1551c37593240321e6bed9cf6ba,Long Beach Transit,Independent Agency,true,true,true,true,true
+7b9aefdbb7e1e146b9621cf38baeaad8,Los Angeles County,County,false,true,true,false,true
+669764660efbbe31b3da2193335c297b,Blue Lake Rancheria,Tribe,true,true,false,true,false
+e11931e23f9d78ddeabe78ef67598b3b,City of Culver City,City/Town,true,,true,true,false
+be9c12b1d50d424ac58ca3d1351259db,City of Los Angeles,City/Town,false,true,true,false,true
+db171f3a0ffee30bf04c5de42046c02d,City of Santa Maria,City/Town,true,true,false,false,true
+92b00c9f5d90522d6a4f7b91806df376,City of Simi Valley,City/Town,true,false,false,false,true
+c09f4a3cdbdbd9c9bd04c958f2cfa756,City of West Covina,City/Town,false,false,false,false,true
+7274671a7c5b5c58455510c62223e4da,Menlo Park Shuttles,City/Town,false,false,true,false,false
+9a12e9e877029164dc180bdf6b3b9da6,Banning Pass Transit,City/Town,false,,true,true,true
+255078c80ba6d2fa82fe429ad5244f97,City of Baldwin Park,City/Town,false,true,false,false,true
+7c27ff99f7fa0b374fc6de9dd30c582d,City of Bell Gardens,City/Town,false,true,true,true,false
+84cf8f762ae17a07ac777f5a56d9e393,City of Laguna Beach,City/Town,false,,true,true,false
+16d4bd218ac40113fe98852e00c54ed0,City of San Clemente,City/Town,true,,true,false,true
+fa75edea11e8c8012de543d85cc5a429,City of Santa Monica,City/Town,true,false,false,false,false
+08ed0a2d1e82b7cc7859a9a8756e9c90,City of Sierra Madre,City/Town,false,true,true,true,true
+a1e93b65b71053a93b8bad41a29a44e5,Curry Public Transit,Independent Agency,false,true,true,true,false
+20985ff00c5eeaaf75ddd007eeacc6f2,City of Beverly Hills,City/Town,false,,false,false,false
+eb0fbf468a990113ad7a393489f25d49,City of Monterey Park,City/Town,false,,true,false,false
+daab3089bbebe164d54073572bc08bad,City of Redondo Beach,City/Town,true,true,false,true,false
+c5ad705b44bb4de806b2e8ab8df4b1e3,City of Santa Clarita,City/Town,true,true,false,true,false
+af82b1d92277e58878e9acc74e0667a6,City of Thousand Oaks,City/Town,false,false,true,true,false
+497836a35120229f6f92fef655920878,Solano County Transit,Independent Agency,true,,true,false,false
+26b06404aa62a3d05e9ffd0ffc1c2343,City of Rancho Cordova,City/Town,true,,false,false,false
+978496386cb28dadbe08493719a6cd7b,City of West Hollywood,City/Town,false,,true,true,false
+a973e445df4d0b878cd5d74b0ca4cc18,Lake Transit Authority,Independent Agency,true,true,true,true,false
+82701eb1de9e67b3fec7cb153d2c44c8,Plumas Transit Systems,Independent Agency,true,,false,false,false
+cedc3e7cf5339d552c4d5f39e722d119,SunLine Transit Agency,Independent Agency,false,true,false,false,false
+ef0f88d76783525bd34cf374d9db50ec,City of Huntington Park,City/Town,true,true,true,true,false
+aea4ba709373875da8286dfd10df1d2c,City of San Luis Obispo,City/Town,true,false,true,false,true
+28b31810ca6a37b3e9442a699c9fd054,Calaveras Transit Agency,Joint Powers Agency,true,false,true,false,false
+5a9b070781a92b84984a0c558571cd9c,Monterey-Salinas Transit,Independent Agency,false,,true,false,true
+3291f1dcf54d46b3b25d6dcfa12f7df2,North Lake Tahoe Express,Independent Agency,false,true,false,true,false
+c346f3e31e04e7682b63a4d65d4b2072,Riverside Transit Agency,Independent Agency,false,false,true,true,true
+1e86981bcdda2637d734e600adf46bcc,Humboldt Transit Authority,Independent Agency,true,true,false,false,true
+45fcf9aa4641483402ced8e2fa58b82f,Los Angeles World Airports,Independent Agency,true,false,false,false,false
+0a37bb3e2df0f44e16b3041180ec1293,Redding Area Bus Authority,Independent Agency,true,true,false,true,true
+2868bbafaa4e330da76b27a34c9dec84,City of San Juan Capistrano,City/Town,true,,true,false,true
+0f7d8b19a6d2f22135a81ae49f774771,City of South San Francisco,City/Town,true,,false,true,true
+084fed371772bad816b584550a571ff1,Mendocino Transit Authority,Independent Agency,false,false,true,true,false
+be013ed179f85aef0582994ff7a19f69,Susanville Indian Rancheria,Tribe,true,false,true,false,true
+4047ad30ebd71bdf94b58de75a08b1c7,Colusa County Transit Agency,Independent Agency,true,true,true,false,false
+2b2d330474c447b0bd78e464d73245df,Lassen Transit Service Agency,Independent Agency,false,true,true,false,false
+7389f1baf873000e25cf84af403f6875,Marin County Transit District,Independent Agency,true,true,false,false,true
+78f0ef72a35aea1b37eb0c3d1204a9ac,North County Transit District,Independent Agency,true,false,true,true,true
+ed21f56786e44b29a4bf7147c67e2d28,Tahoe Transportation District,Independent Agency,true,true,true,true,true
+8b881625657f81be2c0ef1c2be7a3d24,Yuba-Sutter Transit Authority,Independent Agency,false,,true,false,true
+80033e04165df84f58f51b2a56a938fe,Amador Regional Transit System,Independent Agency,true,false,false,false,true
+cf237a3c688eacc0384f35646055409a,Anaheim Transportation Network,Independent Agency,false,,true,false,true
+49da62a5bf0a17437e9e5be0e44ab414,Golden Empire Transit District,Independent Agency,false,true,true,true,false
+33637aaae1103569f888ec1b431031eb,Modoc Transportation Authority,Independent Agency,false,true,false,true,false
+432ebdfde54e5d6fe2f39fb78d6277c0,Tuolumne County Transit Agency,Independent Agency,false,false,false,true,false
+dabaf1c12b2aca15e506ce8fb4f7681e,Morongo Basin Transit Authority,Independent Agency,true,true,false,false,false
+133ec6ab00302faaefe7649cf19576e8,Redwood Coast Transit Authority,Independent Agency,true,,false,true,true
+76677611969904bf1f4ad09f6dd631cf,San Diego International Airport,Independent Agency,false,false,true,false,true
+d14e900babddcfc79465fb18bae82826,Solano Transportation Authority,Independent Agency,true,,true,false,true
+292bc0cbef376a6e14c9f38b348c7d2d,"University of California, Davis",University - Public,true,,true,true,false
+abb6dbd99ecd08d1081be0117223f02b,Victor Valley Transit Authority,Independent Agency,false,true,true,false,false
+cd1ca5d14e20d1b0754258a5c1170354,City and County of San Francisco,City/Town,true,false,false,true,true
+b2413ef48303343e08c7a1c81849ef9d,Eastern Sierra Transit Authority,Independent Agency,true,true,true,true,true
+bf4967c259fd8e575f435a4840293313,Palo Verde Valley Transit Agency,Independent Agency,false,,true,true,false
+ac739f04096fd8911447ef6cc59ab836,"University of California, Irvine",University - Public,false,false,false,false,false
+e3a0bd0afb71fe32ec83189c009cf33b,"University of California, Merced",University - Public,true,true,false,false,false
+341d17aa35a537262426ebae60b1fc6b,Antelope Valley Transit Authority,Independent Agency,false,true,false,false,true
+949e389a82b16005642e140407f2fff2,San Mateo County Transit District,Independent Agency,false,true,false,true,false
+52209248e5013396e51908a83433b65c,El Dorado County Transit Authority,Independent Agency,true,,true,false,true
+42e7629723bd69a24b7a2e3cfae5dea6,Fresno County Rural Transit Agency,Independent Agency,false,,false,false,true
+6e8f25e3acb25f37d55c2a46bb9b0df6,San Joaquin Joint Powers Authority,Independent Agency,true,,false,false,false
+a4347f2d9b88d3c4ffba49257abc86cf,"University of California, Berkeley",University - Public,false,true,false,true,false
+360e8fb158de1a3cc5638e3af7dcc8de,San Francisco International Airport,Independent Agency,false,,true,false,true
+36b5a30ad14f574e397eaa4f58938725,"University of California, San Diego",University - Public,true,true,true,false,true
+36812a0f860dfbd4d46c0b8e92cdb0d2,Yolo County Transportation District,Independent Agency,false,,false,false,true
+0fe0a9e848c9f808945e0e33c8dd65b0,Napa Valley Transportation Authority,Independent Agency,true,true,true,true,false
+730bbdd9c6ee4c7e2dce65e60d64ec5b,Sacramento Regional Transit District,Independent Agency,false,true,false,false,false
+716780f26c610b99841112cf127e315e,San Joaquin Regional Rail Commission,Independent Agency,true,,false,true,false
+6b9837cb43da7c92d6cdd1c34786e566,"University of California, Santa Cruz",University - Public,true,true,false,true,true
+36d62623db3c7686370bc1b14475560e,Alameda-Contra Costa Transit District,Independent Agency,true,true,true,true,true
+a0162646e706a2c9c00a181fad58e3be,Peninsula Corridor Joint Powers Board,Joint Powers Agency,true,,false,false,true
+421340772bcccb19f2b4b16119825305,San Diego Metropolitan Transit System,Independent Agency,true,,false,false,true
+ca5458ad1469e210cf8e60ec0a020310,San Joaquin Regional Transit District,Independent Agency,true,,true,false,false
+fa9cd357d847e1f8f85a750fdce501eb,Stanislaus Regional Transit Authority,Independent Agency,true,,false,false,false
+d011059ee4882fca92d6f62505d9be89,Treasure Island Community Development,Company,true,,false,true,false
+aa056ef1700ac8a3e72a4c916916d821,Tulare County Regional Transit Agency,Joint Powers Agency,false,false,false,true,true
+302b30bd4953a96e5e6d9a702718017c,"University of California, Los Angeles",University - Public,true,,false,false,false
+5412f584eaf069e28b121d1b6f45f339,Butte-Glenn Community College District,University - Public,true,,false,true,true
+a7f120ae61dfa4c8dd6c3e41978f2f48,Central Contra Costa Transit Authority,Joint Powers Agency,false,true,true,true,false
+0e1b76d02284e3abb53a1ff43201cfb7,Eastern Contra Costa Transit Authority,Independent Agency,false,,true,false,true
+d068e7ec894016c63f7ce0b764e4a19e,Orange County Transportation Authority,Independent Agency,true,true,true,true,true
+a388459cc07abd1c8dfec48843035c45,Western Contra Costa Transit Authority,Independent Agency,false,true,true,false,true
+35a8c0b55bfc3057fa92df70422a92ef,Butte County Association of Governments,Joint Powers Agency,false,false,false,true,true
+5df3b35b1c099c207e09fa6c81a207eb,Capitol Corridor Joint Powers Authority,Independent Agency,true,,true,true,true
+b71c4a57a5376b2d6fce21d6a4239759,Kings County Area Public Transit Agency,Independent Agency,true,false,false,true,true
+816e4bb325af0fdf17911476f1bb001d,Sonoma-Marin Area Rail Transit District,Independent Agency,true,,true,false,true
+8b9f0c7d5bac745ebb6b8144ad56c39d,"University of California, San Francisco",University - Public,true,false,true,false,false
+e661383cc728eb1c97d0b6e189cedfcd,Mountain Area Regional Transit Authority,Independent Agency,false,true,false,false,false
+ce5af6f2785164275d6e8b01ab7ab661,Palos Verdes Peninsula Transit Authority,Independent Agency,true,,false,true,false
+321cdc4c1f5d51c8848992b2fcc37729,Santa Cruz Metropolitan Transit District,Independent Agency,false,,true,true,true
+6d6b0f1e34e1109dd05d3920b35e404f,Ventura County Transportation Commission,Independent Agency,true,,true,true,false
+84a40ff5d85f2633698a2541c2623420,Imperial County Transportation Commission,Independent Agency,true,,true,true,true
+8cf5ccaf91a79d0f192d547b78afae00,San Luis Obispo Regional Transit Authority,Independent Agency,false,,true,true,true
+3d442fdd55188cad1f1e2206602bad31,Tahoe Truckee Area Regional Transportation,Independent Agency,false,,false,false,false
+b3266f34e878717c423c01e9538ea02b,Emeryville Transportation Management Agency,Non-Profit Organization,true,true,false,false,true
+c138b6afd80e6894fab4f9096c4a10dd,Livermore / Amador Valley Transit Authority,Independent Agency,true,,true,true,false
+83d271fdeb77030e0949dd37701b8df2,Santa Barbara Metropolitan Transit District,Independent Agency,false,false,false,false,false
+cc64a6e14fc1563c0701048944426de3,Santa Clara Valley Transportation Authority,Independent Agency,false,,false,true,false
+f068e9f3967c3c269651334b07815998,Southern California Regional Rail Authority,Independent Agency,true,,false,false,true
+ca6d917e6b2dfa007b737485065aa1c6,Yosemite Area Regional Transportation System,Independent Agency,true,true,true,true,false
+0a00b255babc7b9b84442c0f8382cd7b,San Francisco Bay Area Rapid Transit District,Independent Agency,true,true,true,false,false
+80b2b7006705b539b1183ed16b600f73,San Bernardino County Transportation Authority,Council of Governments,false,,false,false,true
+14572d31e497aea13c5dc4edaa968e78,Santa Barbara County Association of Governments,MPO/RTPA,false,false,false,false,false
+6c26171ee02a6775ec7e2117c5f5507a,San Benito County Local Transportation Authority,Independent Agency,true,,false,false,true
+f6401240036e751d96f764d395d90603,Transit Joint Powers Authority for Merced County,Joint Powers Agency,true,true,false,true,true
+9cb53768898ced9fd5f7e24f87f4599f,San Leandro Transportation Management Organization,Non-Profit Organization,false,,false,true,true
+4c4ea348d1ba0adac05bd1902c0378f1,Mountain View Transportation Management Association,Non-Profit Organization,false,false,true,false,false
+58445ff32bf6a7f4634f8d517ea16bdb,Berkeley Gateway Transportation Management Association,Non-Profit Organization,true,true,true,true,false
+c0250aa9e1e5c8ff426a4f3ec595fb3a,"Golden Gate Bridge, Highway and Transportation District",Independent Agency,true,true,false,false,true
+983e1895779a5dad7bf9d5a7ea90f3bc,Los Angeles County Metropolitan Transportation Authority,Independent Agency,false,,true,false,true
+dd1bdbcc7e41cb69c5e59208cd877720,San Francisco Bay Area Water Emergency Transit Authority,Independent Agency,false,,true,false,true
+c896531bbe488e1809e6bfa8197cd06b,Yuma County Intergovernmental Public Transportation Authority,Independent Agency,true,true,true,true,false

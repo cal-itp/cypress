@@ -9,7 +9,7 @@ import pandas as pd
 
 from google.cloud import bigquery, exceptions
 
-STUB_DATA_DIR = pathlib.Path(__file__).parent / 'stub_data'
+STUB_DATA_DIR = pathlib.Path(__file__).parent.parent / 'app' / 'stub_data'
 PROJECT_ID = os.environ['PROJECT_ID']
 GRANTS_DATASET_ID = os.environ['GRANTS_DATASET_ID']
 
@@ -43,10 +43,10 @@ def load_grants_stub_data():
     df = pd.read_csv(STUB_DATA_DIR / 'grant_eligibility_criteria.csv')
     df.to_gbq(f'{GRANTS_DATASET_ID}.grant_eligibility_criteria', PROJECT_ID, if_exists='replace')
 
-    # Load grant_eligible_types.csv into the grant_eligible_types table
-    logging.info('Loading grant_eligible_types.csv into the grant_eligible_types table...')
-    df = pd.read_csv(STUB_DATA_DIR / 'grant_eligible_types.csv')
-    df.to_gbq(f'{GRANTS_DATASET_ID}.grant_eligible_types', PROJECT_ID, if_exists='replace')
+    # Load grant_eligible_grantee_types.csv into the grant_eligible_grantee_types table
+    logging.info('Loading grant_eligible_grantee_types.csv into the grant_eligible_grantee_types table...')
+    df = pd.read_csv(STUB_DATA_DIR / 'grant_eligible_grantee_types.csv')
+    df.to_gbq(f'{GRANTS_DATASET_ID}.grant_eligible_grantee_types', PROJECT_ID, if_exists='replace')
 
 
 if __name__ == '__main__':

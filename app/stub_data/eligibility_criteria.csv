@@ -1,0 +1,10 @@
+eligiblity_code,description
+e0001,primary applicant entity type
+e0002,sub-applicant entity type
+e0003,non-urbanized service area
+e0004,regularly scheduled service connecting two or more urban areas
+e0005,service area in an air quality non-attainment area
+e0006,eligible for state transit assistance
+e0007,service area is in Federally designated Trade Corridors of National and Regional Significance on California's portion of the National Highway Freight Network as identified in the California Freight Mobility Plan and along other corridors with a high volume of freight movement
+e0008,project beneficiaries
+e0009,project type

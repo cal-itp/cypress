@@ -25,3 +25,8 @@ The scripts can be run in the following order:
 2. `load_census_data.py` - Loads Census data into BigQuery.
 
 ## Calculating Grant Eligibility
+
+The grant eligibility calculations are performed using SQL scripts in the `sql` directory. These scripts would eventually become DBT models.
+
+Tables:
+- `cypress.customer_grant_eligibility` - Contains the grant eligibility calculations for each customer.
