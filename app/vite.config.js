@@ -1,3 +1,5 @@
+/* globals __dirname */
+
 import { resolve } from 'node:path'
 import { fileURLToPath, URL } from 'node:url'
 
