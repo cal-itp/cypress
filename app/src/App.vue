@@ -159,5 +159,6 @@ header {
 main {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
 }
 </style>

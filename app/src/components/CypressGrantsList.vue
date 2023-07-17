@@ -57,3 +57,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+ol {
+  padding: 0;
+  list-style: none;
+}
+</style>

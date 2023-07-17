@@ -1,16 +1,11 @@
 <template>
   <form>
     <fieldset class="grantee-info">
-      <legend>Who is applying for the grant?</legend>
+      <legend><h2>Who is applying for the grant?</h2></legend>
 
       <div class="field">
         <label for="primary-applicant">Who is the primary applicant for the grant?</label>
-        <select name="primary-applicant" v-model="primaryApplicantName" @change="handleApplicantInfoChange">
-          <option></option>
-          <option v-for="customer in customerOptions" :value="customer.value" :key="customer.key">
-            {{ customer.label }}
-          </option>
-        </select>
+        <cypress-select name="primary-applicant" v-model="primaryApplicantName" :options="customerOptions" @change="handleApplicantInfoChange"></cypress-select>
       </div>
 
       <div class="field">
@@ -25,7 +20,7 @@
     </fieldset>
 
     <fieldset class="project-info">
-      <legend>Tell us a little about the project...</legend>
+      <legend><h2>Tell us a little about the project...</h2></legend>
 
       <div class="field">
         <label for="project-type">What type of project is this?</label>
@@ -51,6 +46,8 @@
 </template>
 
 <script>
+import CypressSelect from './CypressSelect.vue';
+
 export default {
   props: {
     customers: {
@@ -117,21 +114,34 @@ export default {
         key: beneficiary,
       }));
     },
-  }
+  },
+
+  components: {
+    CypressSelect,
+  },
 }
 </script>
 
 <style scoped>
+fieldset {
+  border: none;
+  padding: 0;
+  padding-bottom: 1rem;
+}
+
 .field {
   width: 100%;
   display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
 }
 
 .field label {
   width: 50%;
 }
 
-.field select {
+.field select,
+.field .cypress-select {
   width: 50%;
   height: 1.5rem;
 }
