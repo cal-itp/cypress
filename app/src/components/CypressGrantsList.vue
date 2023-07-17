@@ -16,7 +16,7 @@
 
 <script>
 import CypressGrantsListItem from './CypressGrantsListItem.vue';
-import { isApplicantEligible } from '../utils';
+import { isProjectEligible } from '../utils';
 
 export default {
   props: {
@@ -40,8 +40,8 @@ export default {
           false: 3,
         };
 
-        const aEligibility = eligibilityOrder[isApplicantEligible(this.applicantInfo, a).determination];
-        const bEligibility = eligibilityOrder[isApplicantEligible(this.applicantInfo, b).determination];
+        const aEligibility = eligibilityOrder[isProjectEligible(this.applicantInfo, a).determination];
+        const bEligibility = eligibilityOrder[isProjectEligible(this.applicantInfo, b).determination];
 
         if (aEligibility !== bEligibility) {
           return aEligibility - bEligibility;

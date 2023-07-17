@@ -1,13 +1,13 @@
 <template>
-  <li :class="'grant ' + eligibilityClasses()">
-    <h3>{{ grant.name }}</h3>
-    <span v-if="isPrimaryApplicantSelected" class="overall-determination">{{ overallDeterminationLabel() }}</span>
-    <div v-if="isPrimaryApplicantSelected" class="toggle-detail-visibility">
-      <button class="toggle-reasons-button" @click="toggleDetailVisibility">
+  <li :class="'grantee ' + eligibilityClasses()" tabindex="0" @keypress.enter="toggleDetailVisibility" @click="toggleDetailVisibility">
+    <h3>{{ customer.name }}</h3>
+    <span v-if="isGrantSelected" class="overall-determination">{{ overallDeterminationLabel() }}</span>
+    <div v-if="isGrantSelected" class="toggle-detail-visibility">
+      <button class="toggle-reasons-button" tabindex="-1" @click="toggleDetailVisibility">
         ({{ isDetailVisible ? 'Hide' : 'Show' }} reasons)
       </button>
     </div>
-    <div v-if="isPrimaryApplicantSelected && isDetailVisible" class="reasons">
+    <div v-if="isGrantSelected && isDetailVisible" class="reasons">
       <ul>
         <li class="criterion" v-for="criterion in orderedEligibilityCriteria" :key="criterion.reason">
           <span class="determination-marker">
@@ -26,15 +26,15 @@
 </template>
 
 <script>
-import { isProjectEligible } from '../utils';
+import { isCustomerEligible } from '../utils';
 
 export default {
   props: {
     grant: {
-      type: Object,
+      type: [Object, null],
       required: true,
     },
-    applicantInfo: {
+    customer: {
       type: Object,
       required: true,
     },
@@ -50,12 +50,12 @@ export default {
     };
   },
   computed: {
-    isPrimaryApplicantSelected() {
-      return !!this.applicantInfo.primaryApplicant;
+    isGrantSelected() {
+      return !!this.grant;
     },
 
     eligibility() {
-      const e = isProjectEligible(this.applicantInfo, this.grant);
+      const e = isCustomerEligible(this.customer, this.grant);
       return e;
     },
 
@@ -83,14 +83,14 @@ export default {
       this.isDetailVisible = !this.isDetailVisible;
     },
     overallDeterminationLabel() {
-      return !this.isPrimaryApplicantSelected         ? '' :
+      return !this.isGrantSelected         ? '' :
              this.eligibility.determination === true  ? 'Eligible' :
              this.eligibility.determination === false ? 'Ineligible' :
              this.eligibility.determination === null  ? 'Needs Review' :
                                                         'Not enough information...';
     },
     eligibilityClasses() {
-      return !this.isPrimaryApplicantSelected         ? '' :
+      return !this.isGrantSelected         ? '' :
              this.eligibility.determination === true  ? 'eligible' :
              this.eligibility.determination === false ? 'ineligible' :
              this.eligibility.determination === null  ? 'needs-review' :
@@ -104,20 +104,22 @@ export default {
 h3 {
   grid-area: name;
   margin: 0;
-  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
 }
 
-.grant {
+.grantee {
   display: grid;
   grid-template-areas:
-    "name eligibility"
-    "toggle toggle"
-    "reasons reasons";
-  grid-template-columns: 1fr auto;
+    "name eligibility toggle"
+    "name eligibility reasons";
+  grid-template-columns: 1fr 1fr 1fr;
   border: 1px solid silver;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  width: 20rem;
+  border-width: 0 0 1px 0;
+  margin: 0;
+  padding: 0.25rem;
+  width: 100%;
   color: silver;
   background-color: rgba(192, 192, 192, 0.1);
 }
@@ -150,7 +152,7 @@ h3 {
 
 .toggle-detail-visibility {
   grid-area: toggle;
-  padding-top: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .toggle-reasons-button {
@@ -162,6 +164,7 @@ h3 {
   text-transform: lowercase;
   text-align: center;
   cursor: pointer;
+  font-size: 0.6rem;
 }
 
 ul {

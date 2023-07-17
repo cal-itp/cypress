@@ -22,6 +22,7 @@ export default defineConfig({
       input: {
         index: resolve(__dirname, 'index.html'),
         findGrants: resolve(__dirname, 'find-grants.html'),
+        findGrantees: resolve(__dirname, 'find-grantees.html'),
       },
     },
   },

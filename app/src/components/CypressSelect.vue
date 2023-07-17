@@ -13,7 +13,7 @@
     </div>
 
     <ul class="options" v-if="(waitingToFocus || isFocused)">
-      <li :class="getOptionClasses(option)" v-for="option in filteredOptions" :key="option.value" :ref="'option-' + option.value" @click="selectOption(option)" @mouseover="highlightOption(option)">
+      <li :class="getOptionClasses(option)" v-for="option in filteredOptions" :key="option.key" :ref="'option-' + option.key" @click="selectOption(option)" @mouseover="highlightOption(option)">
         <div>
           {{ option.label }}
         </div>
@@ -44,7 +44,6 @@ export default {
       default: false,
     },
     modelValue: {
-      type: String,
       required: false,
       default: null,
     },
@@ -113,7 +112,7 @@ export default {
 
     selectOption(option) {
       this.selectedOption = option;
-      console.log(`selected ${option.value}`)
+      console.log(`selected ${option.key}`)
       this.$emit('update:modelValue', option.value);
       this.$emit('change', option.value);
       this.unfocus();
@@ -122,7 +121,7 @@ export default {
     highlightOption(option) {
       this.highlightedOption = option;
       if (option) {
-        this.$refs['option-' + option.value][0].scrollIntoView({
+        this.$refs['option-' + option.key][0].scrollIntoView({
           block: 'nearest',
           inline: 'nearest',
         });
@@ -138,7 +137,7 @@ export default {
     keyboardControl(event) {
       function findOptionIndex(options, optionToSearch) {
         for (const [index, option] of options.entries()) {
-          if (option.value === optionToSearch.value) {
+          if (option.key === optionToSearch.key) {
             return index;
           }
         }
@@ -181,8 +180,8 @@ export default {
     getOptionClasses(option) {
       return {
         option: true,
-        selected: this.selectedOption && this.selectedOption.value === option.value,
-        highlighted: this.highlightedOption && this.highlightedOption.value === option.value,
+        selected: this.selectedOption && this.selectedOption.key === option.key,
+        highlighted: this.highlightedOption && this.highlightedOption.key === option.key,
       };
     }
   },

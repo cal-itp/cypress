@@ -1,10 +1,10 @@
-eligiblity_code,description
-e0001,primary applicant entity type
-e0002,sub-applicant entity type
-e0003,non-urbanized service area
-e0004,regularly scheduled service connecting two or more urban areas
-e0005,service area in an air quality non-attainment area
-e0006,eligible for state transit assistance
-e0007,service area is in Federally designated Trade Corridors of National and Regional Significance on California's portion of the National Highway Freight Network as identified in the California Freight Mobility Plan and along other corridors with a high volume of freight movement
-e0008,project beneficiaries
-e0009,project type
+eligibility_code,description,is_project_specific
+e0001,Primary grant applicant is in the grant's allowed list of primary applicant entity types,FALSE
+e0002,Sub-applicant is in the grant's allowed list of primary applicant entity types,TRUE
+e0003,Grantee's srevice area is fully within or partially within or serving a population in a non-urbanized area,FALSE
+e0004,Grantee has regularly scheduled bus service for general public connecting two or more urban areas not in close proximity,FALSE
+e0005,Grantee provides service in an air quality non-attainment area.,FALSE
+e0006,Grantee is eligible for state transit assistance,FALSE
+e0007,Grantee's service area is in Federally designated Trade Corridors of National and Regional Significance on California's portion of the National Highway Freight Network as identified in the California Freight Mobility Plan and along other corridors with a high volume of freight movement,FALSE
+e0008,Project beneficiaries are in the grant's allowed list of beneficiaries,TRUE
+e0009,Project has a type in the grant's allowed list of project types,TRUE

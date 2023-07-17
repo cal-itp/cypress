@@ -128,6 +128,30 @@ async function fetchGrants() {
   return grants;
 }
 
+async function fetchCritieria() {
+  const results = await papaParsePromise('/stub_data/eligibility_criteria.csv', {
+    header: true,
+    download: true,
+    skipEmptyLines: true,
+  });
+
+  const criteria = results.data.map((row) => {
+    const trinary = {
+      'true': true,
+      'false': false,
+      'null': null,
+      '': null,
+    };
+
+    return {
+      ...row,
+      is_project_specific: trinary[row.is_project_specific.toLowerCase()],
+    }
+  });
+
+  return criteria;
+}
+
 /*
   All eligibility functions should return an object with the following properties:
   - determination: true (eligible), false (ineligible), null (needs human review), or undefined (needs more information)
@@ -298,14 +322,64 @@ function e0009ProjectTypeEligibility(projectTypes, eligibleProjectTypes) {
   return { determination, reason };
 }
 
-function isApplicantEligible(applicantInfo, grant) {
+function isCustomerEligible(customer, grant) {
   /*
-  An applicant is eligible if:
-  - The primary applicant's entity type is in the grant's eligible entity types
+  A customer is eligible if:
+  - The customer's entity type is in the grant's eligible entity types
+  - Any additional general criteria are met.
+  */
+  const criteriaCodes = grant.eligibilityCriteria;
+  const criteria = [];
+  if (criteriaCodes.includes('e0001')) {
+    criteria.push(e0001PrimaryApplicantTypeEligibility(customer, grant.eligiblePrimaryApplicantTypes));
+  }
+  if (criteriaCodes.includes('e0003')) {
+    criteria.push(e0003HasServiceToNonUrbanizedArea(customer));
+  }
+  if (criteriaCodes.includes('e0004')) {
+    criteria.push(e0004HasServiceConnectingUrbanAreas(customer));
+  }
+  if (criteriaCodes.includes('e0005')) {
+    criteria.push(e0005HasServiceInNonAttainmentArea(customer));
+  }
+  if (criteriaCodes.includes('e0006')) {
+    criteria.push(e0006CanReceiveStateTransitAssistance(customer));
+  }
+  if (criteriaCodes.includes('e0007')) {
+    criteria.push(e0007HasServiceAlongFreightCorridors(customer));
+  }
+
+  for (const criterion of criteria) {
+    // If any criterion is false, the customer is not eligible.
+    if (criterion.determination === false) {
+      return { determination: false, criteria}
+    }
+
+    // If any criterion is undefined, we're missing some information to make a
+    // determination.
+    if (criterion.determination === undefined) {
+      return { determination: undefined, criteria}
+    }
+
+    // If any criterion is null, we've gathered all the information we can but
+    // the application will need a human review.
+    if (criterion.determination === null) {
+      return { determination: null, criteria}
+    }
+  }
+
+  // If all criteria are true, the customer is eligible.
+  return { determination: true, criteria };
+}
+
+function isProjectEligible(applicantInfo, grant) {
+  /*
+  A project is eligible if:
+  - The customer's entity type is in the grant's eligible entity types
   - The sub applicant's entity type is in the grant's eligible entity types
   - The project type is in the grant's eligible project types
   - The beneficiaries are in the grant's eligible beneficiaries
-  - Any additional criteria are met.
+  - Any additional project-specific criteria are met.
   */
   const criteriaCodes = grant.eligibilityCriteria;
   const criteria = [];
@@ -335,7 +409,7 @@ function isApplicantEligible(applicantInfo, grant) {
   }
 
   for (const criterion of criteria) {
-    // If any criterion is false, the applicant is not eligible.
+    // If any criterion is false, the project is not eligible.
     if (criterion.determination === false) {
       return { determination: false, criteria}
     }
@@ -353,7 +427,7 @@ function isApplicantEligible(applicantInfo, grant) {
     }
   }
 
-  // If all criteria are true, the applicant is eligible.
+  // If all criteria are true, the project is eligible.
   return { determination: true, criteria };
 }
 
@@ -361,5 +435,7 @@ export {
   papaParsePromise,
   fetchCustomers,
   fetchGrants,
-  isApplicantEligible,
+  fetchCritieria,
+  isCustomerEligible,
+  isProjectEligible,
 };
