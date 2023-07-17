@@ -10,12 +10,7 @@
 
       <div class="field">
         <label for="sub-applicant">Is there a sub-applicant?</label>
-        <select name="sub-applicant" v-model="subApplicantName" @change="handleApplicantInfoChange">
-          <option></option>
-          <option v-for="customer in customerOptions" :value="customer.value" :key="customer.key">
-            {{ customer.label }}
-          </option>
-        </select>
+        <cypress-select name="sub-applicant" v-model="subApplicantName" :disabled="!primaryApplicantName" :options="customerOptions" @change="handleApplicantInfoChange"></cypress-select>
       </div>
     </fieldset>
 
@@ -35,7 +30,6 @@
       <div class="field">
         <label for="project-beneficiaries">Who will benefit from this project?</label>
         <select name="project-beneficiaries" multiple v-model="applicantInfo.projectBeneficiaries">
-          <option></option>
           <option v-for="beneficiary in beneficiaryOptions" :value="beneficiary.value" :key="beneficiary.key">
             {{ beneficiary.label }}
           </option>

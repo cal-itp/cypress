@@ -1,15 +1,16 @@
 <template>
-  <div class="cypress-select">
+  <div :class="{ 'cypress-select': true, 'is-disabled': isDisabled }">
     <div class="unfocus-area" v-if="(waitingToFocus || isFocused)" @click="unfocus"></div>
 
+    <input class="search-text" :disabled="isDisabled" v-if="(waitingToFocus || isFocused)" type="text" ref="searchTextInput" @keydown="keyboardControl" v-model="searchText">
+
     <div class="selection-display" v-if="!(waitingToFocus || isFocused)">
-      <span class="selected-label" tabindex="0" @click="focus" @focus="focus">
+      <span class="selected-label" :tabindex="isDisabled ? '-1' : '0'" @click="focus" @focus="focus">
         {{ (selectedOption || placeholderOption).label }}
       </span>
-      <button class="show-options" v-if="!selectedOption" @click.prevent="focus" title="Show options">⏷</button>
-      <button class="clear-selection" v-if="selectedOption" @click.prevent="clearSelection" title="Clear selection">⮾</button>
+      <button class="show-options" :disabled="isDisabled" v-if="!selectedOption" @click.prevent="focus" title="Show options">⏷</button>
+      <button class="clear-selection" :disabled="isDisabled" v-if="selectedOption" @click.prevent="clearSelection" title="Clear selection">⮾</button>
     </div>
-    <input class="search-text" v-if="(waitingToFocus || isFocused)" type="text" ref="searchTextInput" @keydown="keyboardControl" v-model="searchText">
 
     <ul class="options" v-if="(waitingToFocus || isFocused)">
       <li :class="getOptionClasses(option)" v-for="option in filteredOptions" :key="option.value" :ref="'option-' + option.value" @click="selectOption(option)" @mouseover="highlightOption(option)">
@@ -37,6 +38,11 @@ export default {
       type: Array,
       required: true,
     },
+    disabled: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
     modelValue: {
       type: String,
       required: false,
@@ -57,6 +63,10 @@ export default {
   computed: {
     placeholderOption() {
       return { label: this.placeholder, value: null };
+    },
+
+    isDisabled() {
+      return this.disabled || this.disabled === '';
     },
 
     filteredOptions() {
@@ -169,11 +179,11 @@ export default {
     },
 
     getOptionClasses(option) {
-      return (
-        'option' +
-        (this.selectedOption && this.selectedOption.value === option.value ? ' selected' : '') +
-        (this.highlightedOption && this.highlightedOption.value === option.value ? ' highlighted' : '')
-      );
+      return {
+        option: true,
+        selected: this.selectedOption && this.selectedOption.value === option.value,
+        highlighted: this.highlightedOption && this.highlightedOption.value === option.value,
+      };
     }
   },
 }
@@ -184,6 +194,11 @@ export default {
   position: relative;
 }
 
+.cypress-select.is-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .selection-display {
   display: flex;
   box-sizing: border-box;
@@ -192,7 +207,7 @@ export default {
   padding: 0.25rem;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #ccc;
+  border: 1px solid #888;
   border-radius: 4px;
   cursor: pointer;
 }
