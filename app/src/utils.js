@@ -162,6 +162,24 @@ function e0008ProjectBeneficiariesEligibility(beneficiaries, eligibleBeneficiari
   return { determination, reason };
 }
 
+function e0009ProjectTypeEligibility(projectTypes, eligibleProjectTypes) {
+  const unqualifiedEligibleProjectTypes = eligibleProjectTypes.filter(t => !t.needsAdditionalReview);
+  const qualifiedEligibleProjectTypes = eligibleProjectTypes.filter(t => t.needsAdditionalReview);
+
+  // Is there overlap between the project types and the eligible project types?
+  const determination = projectTypes.length <= 0 ? undefined :
+                        projectTypes.some(t => unqualifiedEligibleProjectTypes.map(e => e.type).includes(t)) ? true :
+                        projectTypes.some(t => qualifiedEligibleProjectTypes.map(e => e.type).includes(t)) ? null :
+                        false;
+  const reason = {
+    true: `Project types "${projectTypes.join('", "')}" are in the list of eligible project types "${unqualifiedEligibleProjectTypes.map(t => t.type).join('", "')}".`,
+    false: `Project types "${projectTypes.join('", "')}" are not in the list of eligible project types "${eligibleProjectTypes.map(t => t.type).join('", "')}".`,
+    null: `Project types "${projectTypes.join('", "')}" require additional review and are not in the list of eligible project types "${qualifiedEligibleProjectTypes.map(t => t.type).join('", "')}".`,
+    undefined: 'Project types are not specified.',
+  }[determination];
+  return { determination, reason };
+}
+
 function isApplicantEligible(applicantInfo, grant) {
   /*
   An applicant is eligible if:
@@ -193,6 +211,9 @@ function isApplicantEligible(applicantInfo, grant) {
   }
   if (criteriaCodes.includes('e0008')) {
     criteria.push(e0008ProjectBeneficiariesEligibility(applicantInfo.projectBeneficiaries, grant.eligibleProjectBeneficiaries));
+  }
+  if (criteriaCodes.includes('e0009')) {
+    criteria.push(e0009ProjectTypeEligibility(applicantInfo.projectTypes, grant.eligibleProjectTypes));
   }
 
   for (const criterion of criteria) {

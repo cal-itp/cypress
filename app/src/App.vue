@@ -4,7 +4,7 @@
   </header>
 
   <main>
-    <cypress-grants-form :customers="customers" :beneficiaries="beneficiaries" v-model="applicantInfo"></cypress-grants-form>
+    <cypress-grants-form :customers="customers" :beneficiaries="beneficiaries" :projectTypes="projectTypes" v-model="applicantInfo"></cypress-grants-form>
     <cypress-grants-list :grants="grants" :applicant-info="applicantInfo"></cypress-grants-list>
   </main>
 </template>
@@ -29,10 +29,11 @@ export default {
         grant by joining from additional tables:
         - eligiblePrimaryApplicantTypes (array of strings)
         - eligibleProjectBeneficiaries (array of strings)
+        - eligibleProjectTypes (array of {type, needsAdditionalReview})
         - eligibilityCriteria (array of strings)
       */
       grants: [],
-      applicantInfo: { projectBeneficiaries: [] },
+      applicantInfo: { projectBeneficiaries: [], projectTypes: [] },
     }
   },
 
@@ -97,7 +98,7 @@ export default {
         }
       }
 
-      const grantEligibleTypes = (await papaParsePromise('/stub_data/grant_eligible_grantee_types.csv', {
+      const grantEligiblePrimaryApplicantTypes = (await papaParsePromise('/stub_data/grant_eligible_primary_applicant_types.csv', {
         header: true,
         download: true,
         skipEmptyLines: true,
@@ -106,6 +107,14 @@ export default {
       .reduce(groupBy('grant_name'), {});
 
       const grantEligibleBeneficiaries = (await papaParsePromise('/stub_data/grant_eligible_beneficiaries.csv', {
+        header: true,
+        download: true,
+        skipEmptyLines: true,
+      }))
+      .data
+      .reduce(groupBy('grant_name'), {});
+
+      const grantEligibleProjectTypes = (await papaParsePromise('/stub_data/grant_eligible_project_types.csv', {
         header: true,
         download: true,
         skipEmptyLines: true,
@@ -122,8 +131,9 @@ export default {
       .reduce(groupBy('grant_name'), {});
 
       for (const grant of grants) {
-        grant.eligiblePrimaryApplicantTypes = (grantEligibleTypes[grant.name] || []).map(row => row.entity_type);
+        grant.eligiblePrimaryApplicantTypes = (grantEligiblePrimaryApplicantTypes[grant.name] || []).map(row => row.entity_type);
         grant.eligibleProjectBeneficiaries = (grantEligibleBeneficiaries[grant.name] || []).map(row => row.beneficiary);
+        grant.eligibleProjectTypes = (grantEligibleProjectTypes[grant.name] || []).map(row => ({ type: row.project_type, needsAdditionalReview: row.needs_additional_review === 'TRUE' }));
         grant.eligibilityCriteria = (grantEligibilityCriteria[grant.name] || []).map(row => row.eligibility_code);
       }
 
@@ -135,6 +145,12 @@ export default {
     beneficiaries() {
       return [
         ...new Set(this.grants.flatMap(grant => grant.eligibleProjectBeneficiaries)),
+      ];
+    },
+
+    projectTypes() {
+      return [
+        ...new Set(this.grants.flatMap(grant => grant.eligibleProjectTypes.map(t => t.type))),
       ];
     },
   },

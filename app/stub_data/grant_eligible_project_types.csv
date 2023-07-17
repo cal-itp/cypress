@@ -1,0 +1,28 @@
+grant_name,project_type,needs_additional_review
+5310,Operating Assistance,FALSE
+5310,Capital Assistance,FALSE
+5310,Mobility Management,FALSE
+5310,Volunteer Driver and Aide,FALSE
+5311 Rural,Operating Assistance,FALSE
+5312 Rural,Capital Assistance,FALSE
+5313 Rural,Transit Planning,FALSE
+5314 Rural,Technical Assistance,FALSE
+5315 Rural,Bicycle Facility,FALSE
+5316 Rural,ADA,FALSE
+5311 (f) Intercity,Operating Assistance,FALSE
+5312 (f) Intercity,Capital Assistance,FALSE
+5313 (f) Intercity,Transit Planning,FALSE
+5339,Bus and Bus Facilities (Capital),FALSE
+5311 CMAQ,Capital Assistance,FALSE
+5312 CMAQ,New Transit Operating,FALSE
+SB 1 State of Good Repair,Capital Assistance,FALSE
+SB 1 State of Good Repair,Ensure assets are in State of Good Repair,FALSE
+SB 1 State of Good Repair,Ensure adequate maintenance,TRUE
+Active Transportation Program,Increase the proportion of trips accomplished by walking and biking,FALSE
+Active Transportation Program,Increase the safety and mobility of non-motorized users,FALSE
+Active Transportation Program,Advance efforts of regional agencies to achieve greenhouse gas reduction goals,FALSE
+Active Transportation Program,Enhance public health,FALSE
+HSIP,New signals,FALSE
+HSIP,Road widening,FALSE
+HSIP,Improve warnings to reduce speed,FALSE
+Clean California Program,Clean and beautify public spaces,FALSE

@@ -19,9 +19,8 @@
 
       <div class="field">
         <label for="project-type">What type of project is this?</label>
-        <select name="project-type" v-model="applicantInfo.projectType">
-          <option></option>
-          <option v-for="projectType in []" :value="projectType.value" :key="projectType.key">
+        <select name="project-type" multiple v-model="applicantInfo.projectTypes">
+          <option v-for="projectType in projectTypeOptions" :value="projectType.value" :key="projectType.key">
             {{ projectType.label }}
           </option>
         </select>
@@ -52,21 +51,31 @@ export default {
       type: Array,
       required: true,
     },
+    projectTypes: {
+      type: Array,
+      required: true,
+    },
     modelValue: {
       type: Object,
       required: false,
       default: () => ({
         primaryApplicant: null,
         subApplicant: null,
-        projectType: null,
+        projectTypes: [],
         projectBeneficiaries: [],
       }),
       validator: (value) => {
         return (
+          true
+
           // projectBeneficiaries must be defined and an array
-          value.projectBeneficiaries !== undefined &&
-          Array.isArray(value.projectBeneficiaries)
-        );
+          && value.projectBeneficiaries !== undefined
+          && Array.isArray(value.projectBeneficiaries)
+
+          // projectTypes must be defined and an array
+          && value.projectTypes !== undefined
+          && Array.isArray(value.projectTypes)
+          );
       },
     },
   },
@@ -84,7 +93,7 @@ export default {
       const newInfo = {
         primaryApplicant: this.customers.find((customer) => customer.name === this.primaryApplicantName),
         subApplicant: this.customers.find((customer) => customer.name === this.subApplicantName),
-        projectType: this.applicantInfo.projectType,
+        projectTypes: this.applicantInfo.projectTypes,
         projectBeneficiaries: this.applicantInfo.projectBeneficiaries,
       };
       this.applicantInfo = newInfo;
@@ -108,6 +117,14 @@ export default {
         key: beneficiary,
       }));
     },
+
+    projectTypeOptions() {
+      return this.projectTypes.map((projectType) => ({
+        label: projectType,
+        value: projectType,
+        key: projectType,
+      }));
+    }
   },
 
   components: {
