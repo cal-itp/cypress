@@ -1,7 +1,7 @@
 <template>
   <li :class="'grant ' + eligibilityClasses()">
     <h3>{{ grant.name }}</h3>
-    <span v-if="isPrimaryApplicantSelected" class="overall-determination">{{ overallDeterminationLabel() }}</span>
+    <span v-if="isPrimaryApplicantSelected" class="overall-determination" v-html="overallDeterminationLabel()"></span>
     <div v-if="isPrimaryApplicantSelected" class="toggle-detail-visibility">
       <button class="toggle-reasons-button" @click="toggleDetailVisibility">
         ({{ isDetailVisible ? 'Hide' : 'Show' }} reasons)
@@ -88,7 +88,7 @@ export default {
              this.eligibility.determination === true  ? 'Eligible' :
              this.eligibility.determination === false ? 'Ineligible' :
              this.eligibility.determination === null  ? 'Needs Review' :
-                                                        'Not enough information...';
+                                                        'May be eligible;<br>more info needed...';
     },
     eligibilityClasses() {
       return !this.isPrimaryApplicantSelected         ? '' :
