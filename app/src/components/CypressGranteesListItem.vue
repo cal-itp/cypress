@@ -16,6 +16,7 @@
           </span>
         </li>
       </ul>
+      <p class="feedback">See something wrong? <a href="..." target="_blank">Report it.</a></p>
     </div>
   </li>
 </template>
@@ -185,5 +186,11 @@ ul {
   grid-area: reasons;
   padding-top: 0.15rem;
   font-size: 0.9rem;
+}
+
+.feedback {
+  text-align: right;
+  font-size: 0.8em;
+  font-style: italic;
 }
 </style>
