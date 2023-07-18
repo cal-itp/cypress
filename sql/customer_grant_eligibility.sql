@@ -80,7 +80,6 @@ customer_grant_eligibility_criteria as (
                 from grant_eligible_grantee_types
                 where grant_name = grants.name)
             when customers.organization_type = 'Independent Agency'
-                or customers.organization_type = 'Joint Powers Agency'
             then 'transit agency' in (
                 select entity_type
                 from grant_eligible_grantee_types
@@ -113,6 +112,11 @@ customer_grant_eligibility_criteria as (
                 from grant_eligible_grantee_types
                 where grant_name = grants.name)
                 or 'rtpa' in (
+                select entity_type
+                from grant_eligible_grantee_types
+                where grant_name = grants.name)
+            when customers.organization_type = 'Joint Powers Agency'
+            then 'joint powers authority' in (
                 select entity_type
                 from grant_eligible_grantee_types
                 where grant_name = grants.name)

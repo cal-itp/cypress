@@ -1,10 +1,11 @@
-eligibility_code,description,is_project_specific
-e0001,Primary grant applicant is in the grant's allowed list of primary applicant entity types,FALSE
-e0002,Sub-applicant is in the grant's allowed list of primary applicant entity types,TRUE
-e0003,Grantee's srevice area is fully within or partially within or serving a population in a non-urbanized area,FALSE
-e0004,Grantee has regularly scheduled bus service for general public connecting two or more urban areas not in close proximity,FALSE
-e0005,Grantee provides service in an air quality non-attainment area.,FALSE
-e0006,Grantee is eligible for state transit assistance,FALSE
-e0007,Grantee's service area is in Federally designated Trade Corridors of National and Regional Significance on California's portion of the National Highway Freight Network as identified in the California Freight Mobility Plan and along other corridors with a high volume of freight movement,FALSE
-e0008,Project beneficiaries are in the grant's allowed list of beneficiaries,TRUE
-e0009,Project has a type in the grant's allowed list of project types,TRUE
+﻿eligibility_code,description,is_project_specific,grant_eligibility_criteria
+e0001,Primary grant applicant is in the grant's allowed list of primary applicant entity types,,"1,5,9,13,18,22,25,28,32,35,38,41,42,45,47"
+e0002,Sub-applicant is in the grant's allowed list of primary applicant entity types,checked,"39,43,46,48"
+e0003,Grantee's srevice area is fully within or partially within or serving a population in a non-urbanized area,,"2,6,14,19"
+e0004,Grantee has regularly scheduled bus service for general public connecting two or more urban areas not in close proximity,,10
+e0005,Grantee provides service in an air quality non-attainment area.,,15
+e0006,Grantee is eligible for state transit assistance,,29
+e0007,Grantee's service area is in Federally designated Trade Corridors of National and Regional Significance on California's portion of the National Highway Freight Network as identified in the California Freight Mobility Plan and along other corridors with a high volume of freight movement,,33
+e0008,Project beneficiaries are in the grant's allowed list of beneficiaries,checked,"3,7,11,16,20,23,26,30,34,36"
+e0009,Project has a type in the grant's allowed list of project types,checked,"4,8,12,17,21,24,27,31,37"
+e0010,50% of grant benefits Underserved Communities,checked,"40,44"

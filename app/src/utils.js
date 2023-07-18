@@ -86,7 +86,7 @@ async function fetchGrants() {
     }
   }
 
-  const grantEligiblePrimaryApplicantTypes = (await papaParsePromise('/stub_data/grant_eligible_primary_applicant_types.csv', {
+  const grantEligiblePrimaryApplicantTypes = (await papaParsePromise('/stub_data/grant_eligible_applicant_types.csv', {
     header: true,
     download: true,
     skipEmptyLines: true,
@@ -94,7 +94,15 @@ async function fetchGrants() {
   .data
   .reduce(groupBy('grant_name'), {});
 
-  const grantEligibleBeneficiaries = (await papaParsePromise('/stub_data/grant_eligible_beneficiaries.csv', {
+  const grantEligibleSubApplicantTypes = (await papaParsePromise('/stub_data/grant_eligible_subapplicant_types.csv', {
+    header: true,
+    download: true,
+    skipEmptyLines: true,
+  }))
+  .data
+  .reduce(groupBy('grant_name'), {});
+
+  const grantEligibleBeneficiaries = (await papaParsePromise('/stub_data/grant_eligible_project_beneficiaries.csv', {
     header: true,
     download: true,
     skipEmptyLines: true,
@@ -120,8 +128,9 @@ async function fetchGrants() {
 
   for (const grant of grants) {
     grant.eligiblePrimaryApplicantTypes = (grantEligiblePrimaryApplicantTypes[grant.name] || []).map(row => row.entity_type);
+    grant.eligibleSubApplicantTypes = (grantEligibleSubApplicantTypes[grant.name] || []).map(row => row.entity_type);
     grant.eligibleProjectBeneficiaries = (grantEligibleBeneficiaries[grant.name] || []).map(row => row.beneficiary);
-    grant.eligibleProjectTypes = (grantEligibleProjectTypes[grant.name] || []).map(row => ({ type: row.project_type, needsAdditionalReview: row.needs_additional_review === 'TRUE' }));
+    grant.eligibleProjectTypes = (grantEligibleProjectTypes[grant.name] || []).map(row => ({ type: row.project_type, needsAdditionalReview: ['true', 'yes', 'checked'].includes(row.needs_additional_review.toLowerCase()) }));
     grant.eligibilityCriteria = (grantEligibilityCriteria[grant.name] || []).map(row => row.eligibility_code);
   }
 
@@ -158,7 +167,7 @@ async function fetchCritieria() {
   - reason: a string explaining the determination
 */
 
-function e0001PrimaryApplicantTypeEligibility(applicant, eligibleTypes) {
+function checkApplicantType(applicant, eligibleTypes) {
   /*
   We will use the same mapping of entity types as in the customer_grant_eligibility
   SQL query:
@@ -173,7 +182,7 @@ function e0001PrimaryApplicantTypeEligibility(applicant, eligibleTypes) {
   - University - Private: school
   - Community College: school
   - MPO/RTPA: mpo, rtpa
-  - Joint Powers Agency: transit agency
+  - Joint Powers Agency: joint powers authority
   - Council of Governments: mpo
   */
 
@@ -221,7 +230,7 @@ function e0001PrimaryApplicantTypeEligibility(applicant, eligibleTypes) {
       break;
 
     case 'Joint Powers Agency':
-      determination = eligibleTypes.includes('transit agency');
+      determination = eligibleTypes.includes('joint powers authority');
       break;
 
     case 'Council of Governments':
@@ -240,6 +249,16 @@ function e0001PrimaryApplicantTypeEligibility(applicant, eligibleTypes) {
       }[determination]
     : `Applicant type is not specified; only the following are elligible: "${eligibleTypes.join('", "')}".`;
 
+  return { determination, reason };
+}
+
+function e0001PrimaryApplicantTypeEligibility(applicant, eligibleTypes) {
+  return checkApplicantType(applicant, eligibleTypes);
+}
+
+function e0002SubApplicantTypeEligibility(subapplicant, eligibleTypes) {
+  let { determination, reason } = checkApplicantType(subapplicant, eligibleTypes);
+  reason = reason.replace('Applicant', 'Subapplicant');
   return { determination, reason };
 }
 
@@ -322,6 +341,17 @@ function e0009ProjectTypeEligibility(projectTypes, eligibleProjectTypes) {
   return { determination, reason };
 }
 
+function e0010BenefitsUnderservedCommunities(benefitsUnderservedCommunities) {
+  const determination = benefitsUnderservedCommunities;
+  const reason = {
+    true: 'At least 50% of project benefits underserved communities.',
+    false: 'Less than 50% of project benefits underserved communities.',
+    null: 'Project may not benefit underserved communities.',
+    undefined: 'Need to know whether project will benefit underserved communities.'
+  }[determination];
+  return { determination, reason };
+}
+
 function isCustomerEligible(customer, grant) {
   /*
   A customer is eligible if:
@@ -386,6 +416,9 @@ function isProjectEligible(applicantInfo, grant) {
   if (criteriaCodes.includes('e0001')) {
     criteria.push(e0001PrimaryApplicantTypeEligibility(applicantInfo.primaryApplicant, grant.eligiblePrimaryApplicantTypes));
   }
+  if (criteriaCodes.includes('e0002')) {
+    criteria.push(e0002SubApplicantTypeEligibility(applicantInfo.subApplicant, grant.eligibleSubApplicantTypes));
+  }
   if (criteriaCodes.includes('e0003')) {
     criteria.push(e0003HasServiceToNonUrbanizedArea(applicantInfo.primaryApplicant || {}));
   }
@@ -406,6 +439,9 @@ function isProjectEligible(applicantInfo, grant) {
   }
   if (criteriaCodes.includes('e0009')) {
     criteria.push(e0009ProjectTypeEligibility(applicantInfo.projectTypes, grant.eligibleProjectTypes));
+  }
+  if (criteriaCodes.includes('e0010')) {
+    criteria.push(e0010BenefitsUnderservedCommunities(applicantInfo.projectBenefitsUnderservedCommunities));
   }
 
   for (const criterion of criteria) {

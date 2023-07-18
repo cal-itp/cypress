@@ -1,30 +1,49 @@
-grant_name,eligibility_code
-5310,e0001
-5310,e0003
-5310,e0008
-5310,e0009
-5311 (f) Intercity,e0001
-5311 (f) Intercity,e0004
-5311 (f) Intercity,e0008
-5311 (f) Intercity,e0009
-5311 CMAQ,e0001
-5311 CMAQ,e0003
-5311 CMAQ,e0005
-5311 CMAQ,e0008
-5311 CMAQ,e0009
-5311 Rural,e0001
-5311 Rural,e0003
-5311 Rural,e0008
-5311 Rural,e0009
-5339,e0001
-5339,e0003
-5339,e0008
-5339,e0009
-SB 1 State of Good Repair,e0001
-SB 1 State of Good Repair,e0006
-SB 1 State of Good Repair,e0008
-SB 1 State of Good Repair,e0009
-Trade Corridor Enhancement Program TCEP - Rail Freight,e0001
-Trade Corridor Enhancement Program TCEP - Rail Freight,e0007
-Trade Corridor Enhancement Program TCEP - Rail Freight,e0008
-Trade Corridor Enhancement Program TCEP - Rail Freight,e0009
+﻿key,grant_name,eligibility_code
+1,5310,e0001
+2,5310,e0003
+3,5310,e0008
+4,5310,e0009
+5,5339,e0001
+6,5339,e0003
+7,5339,e0008
+8,5339,e0009
+9,5311 (f) Intercity,e0001
+10,5311 (f) Intercity,e0004
+11,5311 (f) Intercity,e0008
+12,5311 (f) Intercity,e0009
+13,5311 CMAQ,e0001
+14,5311 CMAQ,e0003
+15,5311 CMAQ,e0005
+16,5311 CMAQ,e0008
+17,5311 CMAQ,e0009
+18,5311 Rural,e0001
+19,5311 Rural,e0003
+20,5311 Rural,e0008
+21,5311 Rural,e0009
+22,Clean California Program,e0001
+23,Clean California Program,e0008
+24,Clean California Program,e0009
+25,HSIP,e0001
+26,HSIP,e0008
+27,HSIP,e0009
+28,SB 1 State of Good Repair,e0001
+29,SB 1 State of Good Repair,e0006
+30,SB 1 State of Good Repair,e0008
+31,SB 1 State of Good Repair,e0009
+32,Trade Corridor Enhancement Program TCEP - Rail Freight,e0001
+33,Trade Corridor Enhancement Program TCEP - Rail Freight,e0007
+34,Trade Corridor Enhancement Program TCEP - Rail Freight,e0008
+35,Active Transportation Program,e0001
+36,Active Transportation Program,e0008
+37,Active Transportation Program,e0009
+38,Sustainable Transportation Planning Grant Programs - Sustainable Communities Competitive,e0001
+39,Sustainable Transportation Planning Grant Programs - Sustainable Communities Competitive,e0002
+40,Sustainable Transportation Planning Grant Programs - Sustainable Communities Competitive,e0010
+41,Sustainable Transportation Planning Grant Programs - Sustainable Communities Formula,e0001
+42,Sustainable Transportation Planning Grant Programs - Climate Adaptation Planning,e0001
+43,Sustainable Transportation Planning Grant Programs - Climate Adaptation Planning,e0002
+44,Sustainable Transportation Planning Grant Programs - Climate Adaptation Planning,e0010
+45,Sustainable Transportation Planning Grant Programs - Strategic Partnerships,e0001
+46,Sustainable Transportation Planning Grant Programs - Strategic Partnerships,e0002
+47,Sustainable Transportation Planning Grant Programs - Strategic Partnerships - Transit,e0001
+48,Sustainable Transportation Planning Grant Programs - Strategic Partnerships - Transit,e0002

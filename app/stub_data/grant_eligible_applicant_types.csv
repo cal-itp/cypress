@@ -1,0 +1,56 @@
+﻿key,grant_name,entity_type
+1,5310,transit agency
+2,5310,local government
+3,5310,mpo
+4,5310,private non-profit
+5,5311 Rural,transit agency
+6,5311 Rural,indian tribal government
+7,5311 Rural,local government
+8,5311 Rural,mpo
+9,5311 Rural,private non-profit
+10,5311 (f) Intercity,transit agency
+11,5311 (f) Intercity,local government
+12,5311 (f) Intercity,private non-profit
+13,5311 (f) Intercity,private for-profit
+14,5311 (f) Intercity,indian tribal government
+15,5339,transit agency
+16,5339,local government
+17,5339,mpo
+18,5339,private non-profit
+19,5311 CMAQ,transit agency
+20,5311 CMAQ,indian tribal government
+21,5311 CMAQ,local government
+22,5311 CMAQ,mpo
+23,5311 CMAQ,private non-profit
+24,SB 1 State of Good Repair,transit agency
+25,Active Transportation Program,mpo
+26,Active Transportation Program,school
+27,Trade Corridor Enhancement Program TCEP - Rail Freight,city
+28,Trade Corridor Enhancement Program TCEP - Rail Freight,county
+29,Trade Corridor Enhancement Program TCEP - Rail Freight,mpo
+30,Trade Corridor Enhancement Program TCEP - Rail Freight,port authority
+31,Trade Corridor Enhancement Program TCEP - Rail Freight,public construction authority
+32,Trade Corridor Enhancement Program TCEP - Rail Freight,private entity sponsored by a public agency
+33,HSIP,city
+34,HSIP,county
+35,Clean California Program,public agency
+36,Clean California Program,transit agency
+37,Clean California Program,indian tribal government
+38,Clean California Program,private non-profit
+39,Sustainable Transportation Planning Grant Programs - Sustainable Communities Competitive,mpo
+40,Sustainable Transportation Planning Grant Programs - Sustainable Communities Competitive,rtpa
+41,Sustainable Transportation Planning Grant Programs - Sustainable Communities Competitive,transit agency
+42,Sustainable Transportation Planning Grant Programs - Sustainable Communities Competitive,city
+43,Sustainable Transportation Planning Grant Programs - Sustainable Communities Competitive,county
+44,Sustainable Transportation Planning Grant Programs - Sustainable Communities Competitive,indian tribal government
+45,Sustainable Transportation Planning Grant Programs - Sustainable Communities Formula,mpo
+46,Sustainable Transportation Planning Grant Programs - Climate Adaptation Planning,mpo
+47,Sustainable Transportation Planning Grant Programs - Climate Adaptation Planning,rtpa
+48,Sustainable Transportation Planning Grant Programs - Climate Adaptation Planning,transit agency
+49,Sustainable Transportation Planning Grant Programs - Climate Adaptation Planning,city
+50,Sustainable Transportation Planning Grant Programs - Climate Adaptation Planning,county
+51,Sustainable Transportation Planning Grant Programs - Climate Adaptation Planning,indian tribal government
+52,Sustainable Transportation Planning Grant Programs - Strategic Partnerships,mpo
+53,Sustainable Transportation Planning Grant Programs - Strategic Partnerships,rtpa
+54,Sustainable Transportation Planning Grant Programs - Strategic Partnerships - Transit,mpo
+55,Sustainable Transportation Planning Grant Programs - Strategic Partnerships - Transit,rtpa
