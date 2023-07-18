@@ -235,17 +235,20 @@ function checkApplicantType(applicant, eligibleTypes) {
       determination = eligibleTypes.includes('mpo');
       break;
 
+    case undefined:
+      determination = undefined;
+      break;
+
     default:
       determination = null;
   }
 
-  const reason = applicant.organization_type
-    ? {
-        true: `Applicant type "${applicant.organization_type}" corresponds to one of "${eligibleTypes.join('", "')}".`,
-        false: `Applicant type "${applicant.organization_type}" does not correspond to any of "${eligibleTypes.join('", "')}".`,
-        null: `Applicant type "${applicant.organization_type}" is not well understood.`,
-      }[determination]
-    : `Applicant type is not specified; only the following are elligible: "${eligibleTypes.join('", "')}".`;
+  const reason = {
+    true: `Applicant type "${applicant.organization_type}" corresponds to one of "${eligibleTypes.join('", "')}".`,
+    false: `Applicant type "${applicant.organization_type}" does not correspond to any of "${eligibleTypes.join('", "')}".`,
+    null: `Applicant type "${applicant.organization_type}" is not well understood.`,
+    undefined: `Applicant type is not specified; only the following are elligible: "${eligibleTypes.join('", "')}".`,
+  }[determination]
 
   return { determination, reason };
 }
@@ -377,23 +380,21 @@ function isCustomerEligible(customer, grant) {
     criteria.push(e0007HasServiceAlongFreightCorridors(customer));
   }
 
-  for (const criterion of criteria) {
-    // If any criterion is false, the customer is not eligible.
-    if (criterion.determination === false) {
-      return { determination: false, criteria}
-    }
+  // If any criterion is false, the customer is not eligible.
+  if (criteria.some(c => c.determination === false)) {
+    return { determination: false, criteria };
+  }
 
-    // If any criterion is undefined, we're missing some information to make a
-    // determination.
-    if (criterion.determination === undefined) {
-      return { determination: undefined, criteria}
-    }
+  // If any criterion is undefined, we're missing some information to make a
+  // determination.
+  if (criteria.some(c => c.determination === undefined)) {
+    return { determination: undefined, criteria };
+  }
 
-    // If any criterion is null, we've gathered all the information we can but
-    // the application will need a human review.
-    if (criterion.determination === null) {
-      return { determination: null, criteria}
-    }
+  // If any criterion is null, we've gathered all the information we can but
+  // the application will need a human review.
+  if (criteria.some(c => c.determination === null)) {
+    return { determination: null, criteria };
   }
 
   // If all criteria are true, the customer is eligible.
@@ -442,23 +443,21 @@ function isProjectEligible(applicantInfo, grant) {
     criteria.push(e0010BenefitsUnderservedCommunities(applicantInfo.projectBenefitsUnderservedCommunities));
   }
 
-  for (const criterion of criteria) {
-    // If any criterion is false, the project is not eligible.
-    if (criterion.determination === false) {
-      return { determination: false, criteria}
-    }
+  // If any criterion is false, the project is not eligible.
+  if (criteria.some(c => c.determination === false)) {
+    return { determination: false, criteria };
+  }
 
-    // If any criterion is undefined, we're missing some information to make a
-    // determination.
-    if (criterion.determination === undefined) {
-      return { determination: undefined, criteria}
-    }
+  // If any criterion is undefined, we're missing some information to make a
+  // determination.
+  if (criteria.some(c => c.determination === undefined)) {
+    return { determination: undefined, criteria };
+  }
 
-    // If any criterion is null, we've gathered all the information we can but
-    // the application will need a human review.
-    if (criterion.determination === null) {
-      return { determination: null, criteria}
-    }
+  // If any criterion is null, we've gathered all the information we can but
+  // the application will need a human review.
+  if (criteria.some(c => c.determination === null)) {
+    return { determination: null, criteria };
   }
 
   // If all criteria are true, the project is eligible.
