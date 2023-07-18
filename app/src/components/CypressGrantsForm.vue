@@ -166,7 +166,7 @@ fieldset {
 .field select,
 .field .cypress-select {
   width: 50%;
-  height: 1.5rem;
+  min-height: 1.5rem;
 }
 
 .field select[multiple] {
