@@ -14,6 +14,9 @@
         <li v-for="criterion of projectSpecificGrantCriteria" :key="criterion.eligibility_code">
           {{ criterion.description }}
 
+          <!-- E0002: Sub-applicants -->
+          <span v-if="criterion.eligibility_code === 'e0002'">("{{ selectedGrant.eligibleSubApplicantTypes.join('", "') }}")</span>
+
           <!-- E0008: Project Beneficiaries -->
           <span v-if="criterion.eligibility_code === 'e0008'">("{{ selectedGrant.eligibleProjectBeneficiaries.join('", "') }}")</span>
 

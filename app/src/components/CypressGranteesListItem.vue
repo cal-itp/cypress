@@ -1,12 +1,7 @@
 <template>
   <li :class="'grantee ' + eligibilityClasses()" tabindex="0" @keypress.enter="toggleDetailVisibility" @click="toggleDetailVisibility">
     <h3>{{ customer.name }}</h3>
-    <span v-if="isGrantSelected" class="overall-determination">{{ overallDeterminationLabel() }}</span>
-    <div v-if="isGrantSelected" class="toggle-detail-visibility">
-      <button class="toggle-reasons-button" tabindex="-1" @click="toggleDetailVisibility">
-        ({{ isDetailVisible ? 'Hide' : 'Show' }} reasons)
-      </button>
-    </div>
+    <span v-if="isGrantSelected" class="overall-determination">{{ overallDeterminationLabel() }} {{ isDetailVisible ? '⏶' : '⏷' }}</span>
     <div v-if="isGrantSelected && isDetailVisible" class="reasons">
       <ul>
         <li class="criterion" v-for="criterion in orderedEligibilityCriteria" :key="criterion.reason">
@@ -106,15 +101,15 @@ h3 {
   margin: 0;
   display: flex;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .grantee {
   display: grid;
   grid-template-areas:
-    "name eligibility toggle"
-    "name eligibility reasons";
-  grid-template-columns: 1fr 1fr 1fr;
+    "name eligibility"
+    "reasons reasons";
+  grid-template-columns: 1fr auto;
   border: 1px solid silver;
   border-width: 0 0 1px 0;
   margin: 0;
@@ -122,6 +117,7 @@ h3 {
   width: 100%;
   color: silver;
   background-color: rgba(192, 192, 192, 0.1);
+  cursor: pointer;
 }
 
 .eligible {
@@ -147,12 +143,12 @@ h3 {
   grid-area: eligibility;
   display: flex;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .toggle-detail-visibility {
   grid-area: toggle;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .toggle-reasons-button {
@@ -188,6 +184,6 @@ ul {
 .reasons {
   grid-area: reasons;
   padding-top: 0.15rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 </style>

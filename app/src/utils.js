@@ -145,16 +145,14 @@ async function fetchCritieria() {
   });
 
   const criteria = results.data.map((row) => {
-    const trinary = {
-      'true': true,
-      'false': false,
-      'null': null,
-      '': null,
+    const binary = {
+      'checked': true,
+      '': false,
     };
 
     return {
       ...row,
-      is_project_specific: trinary[row.is_project_specific.toLowerCase()],
+      is_project_specific: binary[row.is_project_specific.toLowerCase()],
     }
   });
 
