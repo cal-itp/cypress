@@ -31,7 +31,7 @@ async function fetchCustomers() {
     where _valid_to > current_timestamp
 
   */
-  const results = await papaParsePromise('../stub_data/customers.csv', {
+  const results = await papaParsePromise('stub_data/customers.csv', {
     header: true,
     download: true,
     skipEmptyLines: true,
@@ -72,7 +72,7 @@ async function fetchGrants() {
     - eligibleProjectTypes (array of {type, needsAdditionalReview})
     - eligibilityCriteria (array of strings)
   */
-  const grants = (await papaParsePromise('../stub_data/grants.csv', {
+  const grants = (await papaParsePromise('stub_data/grants.csv', {
     header: true,
     download: true,
     skipEmptyLines: true,
@@ -86,7 +86,7 @@ async function fetchGrants() {
     }
   }
 
-  const grantEligiblePrimaryApplicantTypes = (await papaParsePromise('../stub_data/grant_eligible_applicant_types.csv', {
+  const grantEligiblePrimaryApplicantTypes = (await papaParsePromise('stub_data/grant_eligible_applicant_types.csv', {
     header: true,
     download: true,
     skipEmptyLines: true,
@@ -94,7 +94,7 @@ async function fetchGrants() {
   .data
   .reduce(groupBy('grant_name'), {});
 
-  const grantEligibleSubApplicantTypes = (await papaParsePromise('../stub_data/grant_eligible_subapplicant_types.csv', {
+  const grantEligibleSubApplicantTypes = (await papaParsePromise('stub_data/grant_eligible_subapplicant_types.csv', {
     header: true,
     download: true,
     skipEmptyLines: true,
@@ -102,7 +102,7 @@ async function fetchGrants() {
   .data
   .reduce(groupBy('grant_name'), {});
 
-  const grantEligibleBeneficiaries = (await papaParsePromise('../stub_data/grant_eligible_project_beneficiaries.csv', {
+  const grantEligibleBeneficiaries = (await papaParsePromise('stub_data/grant_eligible_project_beneficiaries.csv', {
     header: true,
     download: true,
     skipEmptyLines: true,
@@ -110,7 +110,7 @@ async function fetchGrants() {
   .data
   .reduce(groupBy('grant_name'), {});
 
-  const grantEligibleProjectTypes = (await papaParsePromise('../stub_data/grant_eligible_project_types.csv', {
+  const grantEligibleProjectTypes = (await papaParsePromise('stub_data/grant_eligible_project_types.csv', {
     header: true,
     download: true,
     skipEmptyLines: true,
@@ -118,7 +118,7 @@ async function fetchGrants() {
   .data
   .reduce(groupBy('grant_name'), {});
 
-  const grantEligibilityCriteria = (await papaParsePromise('../stub_data/grant_eligibility_criteria.csv', {
+  const grantEligibilityCriteria = (await papaParsePromise('stub_data/grant_eligibility_criteria.csv', {
     header: true,
     download: true,
     skipEmptyLines: true,
@@ -138,7 +138,7 @@ async function fetchGrants() {
 }
 
 async function fetchCritieria() {
-  const results = await papaParsePromise('../stub_data/eligibility_criteria.csv', {
+  const results = await papaParsePromise('stub_data/eligibility_criteria.csv', {
     header: true,
     download: true,
     skipEmptyLines: true,
