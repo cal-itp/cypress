@@ -18,6 +18,7 @@ export default defineConfig({
     }
   },
   build: {
+    sourcemap: true,
     rollupOptions: {
       input: {
         index: resolve(__dirname, 'index.html'),
