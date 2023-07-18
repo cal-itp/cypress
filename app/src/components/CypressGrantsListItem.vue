@@ -63,8 +63,8 @@ export default {
     orderedEligibilityCriteria() {
       return this.eligibility.criteria.slice().sort((a, b) => {
         const eligibilityOrder = {
-          undefined: 0,
-          false: 1,
+          false: 0,
+          undefined: 1,
           null:  2,
           true:  3,
         };
