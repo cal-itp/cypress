@@ -62,5 +62,6 @@ export default {
 ol {
   padding: 0;
   list-style: none;
+  overflow-y: auto;
 }
 </style>
