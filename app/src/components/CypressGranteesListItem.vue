@@ -111,33 +111,36 @@ h3 {
     "name eligibility"
     "reasons reasons";
   grid-template-columns: 1fr auto;
-  border: 1px solid silver;
+  border: 1px dashed rgb(64 64 64 / 1);
   border-width: 0 0 1px 0;
   margin: 0;
   padding: 0.25rem;
   width: 100%;
-  color: silver;
-  background-color: rgba(192, 192, 192, 0.1);
+  color: rgb(64 64 64 / 1);
+  background-color: rgb(64 64 64 / 0.1);
   cursor: pointer;
 }
 
 .eligible {
   background-color: rgba(0, 192, 0, 0.1);
   color: green;
+  border-style: solid;
 }
 
 .ineligible {
-  background-color: rgba(255, 0, 0, 0.1);
-  color: red;
+  background-color: rgba(192, 0, 0, 0.1);
+  color: darkred;
+  border-style: solid;
 }
 
 .needs-review {
-  background-color: rgba(255, 165, 0, 0.1);
-  color: orange;
+  background-color: rgba(139 100 8 / 0.1);
+  color: #8a6408;
+  border-style: solid;
 }
 
 .pending {
-  color: gray;
+  border-style: solid;
 }
 
 .overall-determination {
