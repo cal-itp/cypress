@@ -19,7 +19,7 @@
 
       <div class="field">
         <label for="project-type">What type of project is this?</label>
-        <select name="project-type" multiple v-model="applicantInfo.projectTypes">
+        <select name="project-type" id="project-type" multiple v-model="applicantInfo.projectTypes">
           <option v-for="projectType in projectTypeOptions" :value="projectType.value" :key="projectType.key">
             {{ projectType.label }}
           </option>
@@ -28,7 +28,7 @@
 
       <div class="field">
         <label for="project-beneficiaries">Who will benefit from this project?</label>
-        <select name="project-beneficiaries" multiple v-model="applicantInfo.projectBeneficiaries" @change="handleProjectBeneficiariesUpdate">
+        <select name="project-beneficiaries" id="project-beneficiaries" multiple v-model="applicantInfo.projectBeneficiaries" @change="handleProjectBeneficiariesUpdate">
           <option v-for="beneficiary in beneficiaryOptions" :value="beneficiary.value" :key="beneficiary.key">
             {{ beneficiary.label }}
           </option>
@@ -37,7 +37,7 @@
 
       <div class="field">
         <label for="project-benefits-underserved-communities">At least 50% of this project will benefit underserved communities</label>
-        <input type="checkbox" name="project-benefits-underserved-communities" v-model="applicantInfo.projectBenefitsUnderservedCommunities">
+        <input type="checkbox" name="project-benefits-underserved-communities" id="project-benefits-underserved-communities" v-model="applicantInfo.projectBenefitsUnderservedCommunities">
       </div>
     </fieldset>
   </form>

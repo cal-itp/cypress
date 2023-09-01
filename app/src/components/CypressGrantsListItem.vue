@@ -115,31 +115,37 @@ h3 {
     "toggle toggle"
     "reasons reasons";
   grid-template-columns: 1fr auto;
-  border: 1px solid silver;
+  border: 1px dashed rgba(64, 64, 64, 1);
   margin: 0.5rem 0;
   padding: 0.5rem;
   width: 20rem;
-  color: silver;
-  background-color: rgba(192, 192, 192, 0.1);
+  color: rgba(64 , 64, 64, 1);
+  background-color: rgba(64, 64, 64, 0.1);
 }
 
 .eligible {
   background-color: rgba(0, 192, 0, 0.1);
   color: green;
+  border-color: green;
+  border-style: solid;
 }
 
 .ineligible {
-  background-color: rgba(255, 0, 0, 0.1);
-  color: red;
+  background-color: rgba(192, 0, 0, 0.1);
+  color: darkred;
+  border-color: darkred;
+  border-style: solid;
 }
 
 .needs-review {
-  background-color: rgba(255, 165, 0, 0.1);
-  color: orange;
+  background-color: rgba(139 100 8 / 0.1);
+  color: #8a6408;
+  border-color: #8a6408;
+  border-style: solid;
 }
 
 .pending {
-  color: gray;
+  border-style: solid;
 }
 
 .overall-determination {

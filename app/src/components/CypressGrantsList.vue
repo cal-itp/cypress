@@ -1,8 +1,13 @@
 <template>
-  <div>
+  <div class="grants-list-wrapper">
     <header>
       <h2>Grants</h2>
     </header>
+
+    <p v-if="!isPrimaryApplicantSelected">
+      Select a primary applicant in the form to see potential eligibility for
+      the following grants:
+    </p>
 
     <ol>
       <cypress-grants-list-item
@@ -50,6 +55,10 @@ export default {
         }
       });
     },
+
+    isPrimaryApplicantSelected() {
+      return !!this.applicantInfo.primaryApplicant;
+    },
   },
 
   components: {
@@ -59,6 +68,10 @@ export default {
 </script>
 
 <style scoped>
+.grants-list-wrapper {
+  flex-basis: min-content;
+}
+
 ol {
   padding: 0;
   list-style: none;
