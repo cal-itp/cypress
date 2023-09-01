@@ -4,10 +4,12 @@ This repository contains a proof of concept implementation of an automated grant
 
 The calculator builds on the transit agency data, maintained in Airtable and syned into the BigQuery data warehouse.
 
-The repository consists of three main components:
-1. A set of Python scripts to load EPA and Census data into BigQuery. The EPA is used as the source for air quality non-attainment area data, and the Census is used as the source for urbanized area data. These scripts are located in the `data_sources` directory.
-2. A set of SQL scripts to calculate grant eligibility for each transit agency in the data warehouse. These scripts are located in the `sql` directory.
-3. A simple web application to display the results of the grant eligibility calculations with respect to a project with specific criteria. This application is located in the `app` directory.
+## Creating a new eligibility criteria
+
+This is a three-step process:
+1. Add an entry to the `eligibility_criteria` table.
+2. Add a record to the `grant_eligibility_criteria` table for each grant that uses the new eligibility criteria.
+3. Update the _utils.js_ and _customer_grant_eligibility.sql_ files implement the new eligibility criteria. The SQL only needs to be updated for eligibility criteria that are not specific to a project.
 
 ## Loading Source Data
 
