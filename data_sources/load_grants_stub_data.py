@@ -43,10 +43,25 @@ def load_grants_stub_data():
     df = pd.read_csv(STUB_DATA_DIR / 'grant_eligibility_criteria.csv')
     df.to_gbq(f'{GRANTS_DATASET_ID}.grant_eligibility_criteria', PROJECT_ID, if_exists='replace')
 
-    # Load grant_eligible_grantee_types.csv into the grant_eligible_grantee_types table
-    logging.info('Loading grant_eligible_grantee_types.csv into the grant_eligible_grantee_types table...')
-    df = pd.read_csv(STUB_DATA_DIR / 'grant_eligible_grantee_types.csv')
-    df.to_gbq(f'{GRANTS_DATASET_ID}.grant_eligible_grantee_types', PROJECT_ID, if_exists='replace')
+    # Load grant_eligible_applicant_types.csv into the grant_eligible_applicant_types table
+    logging.info('Loading grant_eligible_applicant_types.csv into the grant_eligible_applicant_types table...')
+    df = pd.read_csv(STUB_DATA_DIR / 'grant_eligible_applicant_types.csv')
+    df.to_gbq(f'{GRANTS_DATASET_ID}.grant_eligible_applicant_types', PROJECT_ID, if_exists='replace')
+
+    # Load grant_eligible_subapplicant_types.csv into the grant_eligible_subapplicant_types table
+    logging.info('Loading grant_eligible_subapplicant_types.csv into the grant_eligible_subapplicant_types table...')
+    df = pd.read_csv(STUB_DATA_DIR / 'grant_eligible_subapplicant_types.csv')
+    df.to_gbq(f'{GRANTS_DATASET_ID}.grant_eligible_subapplicant_types', PROJECT_ID, if_exists='replace')
+
+    # Load grant_eligible_project_types.csv into the grant_eligible_project_types table
+    logging.info('Loading grant_eligible_project_types.csv into the grant_eligible_project_types table...')
+    df = pd.read_csv(STUB_DATA_DIR / 'grant_eligible_project_types.csv')
+    df.to_gbq(f'{GRANTS_DATASET_ID}.grant_eligible_project_types', PROJECT_ID, if_exists='replace')
+
+    # Load grant_eligible_applicant_beneficiaries.csv into the grant_eligible_applicant_beneficiaries table
+    logging.info('Loading grant_eligible_applicant_beneficiaries.csv into the grant_eligible_applicant_beneficiaries table...')
+    df = pd.read_csv(STUB_DATA_DIR / 'grant_eligible_applicant_beneficiaries.csv')
+    df.to_gbq(f'{GRANTS_DATASET_ID}.grant_eligible_applicant_beneficiaries', PROJECT_ID, if_exists='replace')
 
 
 if __name__ == '__main__':

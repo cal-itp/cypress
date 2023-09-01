@@ -1,16 +1,16 @@
-﻿name,grant_eligibility_criteria,eligibility_code (from grant_eligibility_criteria),grant_eligible_applicant_types,grant_elilgible_subapplicant_types,grant_eligible_project_beneficiaries,grant_eligible_project_types
-5310,"1,2,3,4","e0001,e0003,e0008,e0009","1,2,3,4",,"1,2","1,2,3,4"
-5311 Rural,"18,19,20,21","e0001,e0003,e0008,e0009","5,6,7,8,9",,3,"5,6,7,8,9,10"
-5311 (f) Intercity,"9,10,11,12","e0001,e0004,e0008,e0009","10,11,12,13,14",,4,"11,12,13"
-5339,"5,6,7,8","e0001,e0003,e0008,e0009","15,16,17,18",,5,14
-5311 CMAQ,"13,14,15,16,17","e0001,e0003,e0005,e0008,e0009","19,20,21,22,23",,6,"15,16"
-SB 1 State of Good Repair,"28,29,30,31","e0001,e0006,e0008,e0009",24,,7,"17,18,19"
-Active Transportation Program,"35,36,37","e0001,e0008,e0009","25,26",,,"20,21,22,23"
-Trade Corridor Enhancement Program TCEP - Rail Freight,"32,33,34","e0001,e0007,e0008","27,28,29,30,31,32",,8,
-HSIP,"25,26,27","e0001,e0008,e0009","33,34",,9,"24,25,26"
-Clean California Program,"22,23,24","e0001,e0008,e0009","35,36,37,38",,10,27
-Sustainable Transportation Planning Grant Programs - Sustainable Communities Competitive,"38,39,40","e0001,e0002,e0010","39,40,41,42,43,44","1,2,3,4,5,6,7,8,9",,
-Sustainable Transportation Planning Grant Programs - Sustainable Communities Formula,41,e0001,45,,,
-Sustainable Transportation Planning Grant Programs - Climate Adaptation Planning,"42,43,44","e0001,e0002,e0010","46,47,48,49,50,51","10,11,12,13,14,15,16,17,18",,
-Sustainable Transportation Planning Grant Programs - Strategic Partnerships,"45,46","e0001,e0002","52,53","19,20,21,22,23,24,25,26,27",,
-Sustainable Transportation Planning Grant Programs - Strategic Partnerships - Transit,"47,48","e0001,e0002","54,55","28,29,30,31,32,33,34,35,36",,
+name
+5310
+5311 Rural
+5311 (f) Intercity
+5339
+5311 CMAQ
+SB 1 State of Good Repair
+Active Transportation Program
+Trade Corridor Enhancement Program TCEP - Rail Freight
+HSIP
+Clean California Program
+Sustainable Transportation Planning Grant Programs - Sustainable Communities Competitive
+Sustainable Transportation Planning Grant Programs - Sustainable Communities Formula
+Sustainable Transportation Planning Grant Programs - Climate Adaptation Planning
+Sustainable Transportation Planning Grant Programs - Strategic Partnerships
+Sustainable Transportation Planning Grant Programs - Strategic Partnerships - Transit
