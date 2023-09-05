@@ -10,7 +10,11 @@
     <div v-if="isPrimaryApplicantSelected && isDetailVisible" class="reasons">
       <ul>
         <li class="criterion" v-for="criterion in orderedEligibilityCriteria" :key="criterion.reason">
-          <span class="determination-marker">
+          <span class="determination-marker"
+                :aria-label="criterion.determination === true  ? 'Satisfied' :
+                            criterion.determination === false ? 'Not Satisfied' :
+                            criterion.determination === null  ? 'Needs Review' :
+                                                                'Needs More Info'">
             {{ criterion.determination === true  ? '✓' :
               criterion.determination === false ? '✗' :
               criterion.determination === null  ? '?' :
